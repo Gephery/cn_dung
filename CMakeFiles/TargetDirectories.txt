@@ -1,0 +1,3 @@
+/Users/gephery/clionprojects/code-name/CMakeFiles/rebuild_cache.dir
+/Users/gephery/clionprojects/code-name/CMakeFiles/edit_cache.dir
+/Users/gephery/clionprojects/code-name/CMakeFiles/code_name.dir
