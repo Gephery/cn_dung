@@ -10,7 +10,7 @@ class MUid {
     public:
 
     private:
-        int fix
+        int fix; 
 };
 
 

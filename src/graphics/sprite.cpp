@@ -3,7 +3,7 @@
 //
 
 #include <string>
-#include "../../headers/sprite.h"
+#include "../../include/sprite.h"
 
 SpritePiece::SpritePiece(char path[], SDL_PixelFormat* format)
 {
@@ -30,8 +30,4 @@ bool SpritePiece::IsLoaded()
 SDL_Surface *SpritePiece::GetImg()
 {
     return img_;
-}
-
-SpritePiece::~TrashPiece() {
-    SDL_FreeSurface(img_);
 }

@@ -16,9 +16,6 @@ class Mob
 public:
     // Will return the reference to that slot, but if out of
     // bounds will and if empty will return null.
-    Item** GetItemCell(const int index) { return  }
-
-    Inventory** GetInventory() { return &this->inventory_; }
 
     int GetCurrentHealth() { return *this->health_current_; }
     int GetMaxHealth() { return *this->health_max_; }
@@ -36,9 +33,9 @@ public:
     int GetLevel() { return *this->level_; }
     void SetLevel(const int level) { *(this->level_) = level; }
 
-    int GetDamage(const int amount) { inventory_.getDamge(); }
+    int GetDamage(const int amount);
     int GetHealth(const int amount) { return *(health_current_); }
-    bool IsDead() { return health_current_ == 0; };
+    bool IsDead() { return health_current_ == 0; }
 
     std::list<MUid>** GetMobTypeFriends() { return &friends_; }
     std::list<MUid>** GetMobTypeEnemies() { return &enemies_; }
