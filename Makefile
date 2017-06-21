@@ -48,10 +48,10 @@ RM = /usr/local/Cellar/cmake/3.8.2/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/gephery/clionprojects/code-name
+CMAKE_SOURCE_DIR = /users/gephery/github/code-name
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/gephery/clionprojects/code-name
+CMAKE_BINARY_DIR = /users/gephery/github/code-name
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -69,8 +69,8 @@ rebuild_cache/fast: rebuild_cache
 
 # Special rule for the target edit_cache
 edit_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake cache editor..."
-	/usr/local/Cellar/cmake/3.8.2/bin/ccmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
+	/usr/local/Cellar/cmake/3.8.2/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -80,9 +80,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/gephery/clionprojects/code-name/CMakeFiles /Users/gephery/clionprojects/code-name/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /users/gephery/github/code-name/CMakeFiles /users/gephery/github/code-name/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/gephery/clionprojects/code-name/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /users/gephery/github/code-name/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -285,32 +285,32 @@ src/mob/mob_manager.cpp.s:
 	$(MAKE) -f CMakeFiles/code_name.dir/build.make CMakeFiles/code_name.dir/src/mob/mob_manager.cpp.s
 .PHONY : src/mob/mob_manager.cpp.s
 
-src/util/m_uuid.o: src/util/m_uuid.cpp.o
+src/windowing/game_winda.o: src/windowing/game_winda.cpp.o
 
-.PHONY : src/util/m_uuid.o
+.PHONY : src/windowing/game_winda.o
 
 # target to build an object file
-src/util/m_uuid.cpp.o:
-	$(MAKE) -f CMakeFiles/code_name.dir/build.make CMakeFiles/code_name.dir/src/util/m_uuid.cpp.o
-.PHONY : src/util/m_uuid.cpp.o
+src/windowing/game_winda.cpp.o:
+	$(MAKE) -f CMakeFiles/code_name.dir/build.make CMakeFiles/code_name.dir/src/windowing/game_winda.cpp.o
+.PHONY : src/windowing/game_winda.cpp.o
 
-src/util/m_uuid.i: src/util/m_uuid.cpp.i
+src/windowing/game_winda.i: src/windowing/game_winda.cpp.i
 
-.PHONY : src/util/m_uuid.i
+.PHONY : src/windowing/game_winda.i
 
 # target to preprocess a source file
-src/util/m_uuid.cpp.i:
-	$(MAKE) -f CMakeFiles/code_name.dir/build.make CMakeFiles/code_name.dir/src/util/m_uuid.cpp.i
-.PHONY : src/util/m_uuid.cpp.i
+src/windowing/game_winda.cpp.i:
+	$(MAKE) -f CMakeFiles/code_name.dir/build.make CMakeFiles/code_name.dir/src/windowing/game_winda.cpp.i
+.PHONY : src/windowing/game_winda.cpp.i
 
-src/util/m_uuid.s: src/util/m_uuid.cpp.s
+src/windowing/game_winda.s: src/windowing/game_winda.cpp.s
 
-.PHONY : src/util/m_uuid.s
+.PHONY : src/windowing/game_winda.s
 
 # target to generate assembly for a file
-src/util/m_uuid.cpp.s:
-	$(MAKE) -f CMakeFiles/code_name.dir/build.make CMakeFiles/code_name.dir/src/util/m_uuid.cpp.s
-.PHONY : src/util/m_uuid.cpp.s
+src/windowing/game_winda.cpp.s:
+	$(MAKE) -f CMakeFiles/code_name.dir/build.make CMakeFiles/code_name.dir/src/windowing/game_winda.cpp.s
+.PHONY : src/windowing/game_winda.cpp.s
 
 # Help Target
 help:
@@ -339,9 +339,9 @@ help:
 	@echo "... src/mob/mob_manager.o"
 	@echo "... src/mob/mob_manager.i"
 	@echo "... src/mob/mob_manager.s"
-	@echo "... src/util/m_uuid.o"
-	@echo "... src/util/m_uuid.i"
-	@echo "... src/util/m_uuid.s"
+	@echo "... src/windowing/game_winda.o"
+	@echo "... src/windowing/game_winda.i"
+	@echo "... src/windowing/game_winda.s"
 .PHONY : help
 
 

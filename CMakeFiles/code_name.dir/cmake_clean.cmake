@@ -4,8 +4,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/code_name.dir/src/graphics/sprite_back.cpp.o"
   "CMakeFiles/code_name.dir/src/mob/mob.cpp.o"
   "CMakeFiles/code_name.dir/src/items/item.cpp.o"
-  "CMakeFiles/code_name.dir/src/util/m_uuid.cpp.o"
   "CMakeFiles/code_name.dir/src/mob/mob_manager.cpp.o"
+  "CMakeFiles/code_name.dir/src/windowing/game_winda.cpp.o"
   "build/code_name.pdb"
   "build/code_name"
 )

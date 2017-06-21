@@ -6,59 +6,63 @@
 
 #IncludeRegexTransform: 
 
-/Users/gephery/clionprojects/code-name/include/sprite.h
+/users/gephery/github/code-name/include/sprite.h
 SDL2_image/SDL_image.h
 -
 map
 -
+string
+-
 
-/Users/gephery/clionprojects/code-name/main.cpp
+/users/gephery/github/code-name/main.cpp
 SDL2/SDL.h
 -
 SDL2_image/SDL_image.h
 -
 include/sprite.h
-/Users/gephery/clionprojects/code-name/include/sprite.h
+/users/gephery/github/code-name/include/sprite.h
+src/windowing/game_winda.h
+/users/gephery/github/code-name/src/windowing/game_winda.h
 
-/Users/gephery/clionprojects/code-name/src/graphics/sprite.cpp
-string
--
+/users/gephery/github/code-name/src/graphics/sprite.cpp
 ../../include/sprite.h
-/Users/gephery/clionprojects/code-name/include/sprite.h
+/users/gephery/github/code-name/include/sprite.h
 
-/Users/gephery/clionprojects/code-name/src/graphics/sprite_back.cpp
+/users/gephery/github/code-name/src/graphics/sprite_back.cpp
 ../../include/sprite.h
-/Users/gephery/clionprojects/code-name/include/sprite.h
+/users/gephery/github/code-name/include/sprite.h
 
-/Users/gephery/clionprojects/code-name/src/items/item.cpp
+/users/gephery/github/code-name/src/items/item.cpp
 item.h
-/Users/gephery/clionprojects/code-name/src/items/item.h
+/users/gephery/github/code-name/src/items/item.h
 
-/Users/gephery/clionprojects/code-name/src/items/item.h
+/users/gephery/github/code-name/src/items/item.h
 
-/Users/gephery/clionprojects/code-name/src/mob/mob.cpp
+/users/gephery/github/code-name/src/mob/mob.cpp
 mob.h
-/Users/gephery/clionprojects/code-name/src/mob/mob.h
+/users/gephery/github/code-name/src/mob/mob.h
 
-/Users/gephery/clionprojects/code-name/src/mob/mob.h
+/users/gephery/github/code-name/src/mob/mob.h
 list
 -
 SDL2/SDL_surface.h
 -
 ../items/item.h
-/Users/gephery/clionprojects/code-name/src/items/item.h
-../util/m_uuid.h
-/Users/gephery/clionprojects/code-name/src/util/m_uuid.h
+/users/gephery/github/code-name/src/items/item.h
 
-/Users/gephery/clionprojects/code-name/src/mob/mob_manager.cpp
+/users/gephery/github/code-name/src/mob/mob_manager.cpp
 mob_manager.h
-/Users/gephery/clionprojects/code-name/src/mob/mob_manager.h
+/users/gephery/github/code-name/src/mob/mob_manager.h
 
-/Users/gephery/clionprojects/code-name/src/mob/mob_manager.h
+/users/gephery/github/code-name/src/mob/mob_manager.h
 
-/Users/gephery/clionprojects/code-name/src/util/m_uuid.cpp
-m_uuid.h
-/Users/gephery/clionprojects/code-name/src/util/m_uuid.h
+/users/gephery/github/code-name/src/windowing/game_winda.cpp
+game_winda.h
+/users/gephery/github/code-name/src/windowing/game_winda.h
 
-/Users/gephery/clionprojects/code-name/src/util/m_uuid.h
+/users/gephery/github/code-name/src/windowing/game_winda.h
+SDL2/SDL.h
+-
+SDL2_image/SDL_image.h
+-
 

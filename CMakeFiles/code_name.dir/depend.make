@@ -3,6 +3,7 @@
 
 CMakeFiles/code_name.dir/main.cpp.o: include/sprite.h
 CMakeFiles/code_name.dir/main.cpp.o: main.cpp
+CMakeFiles/code_name.dir/main.cpp.o: src/windowing/game_winda.h
 
 CMakeFiles/code_name.dir/src/graphics/sprite.cpp.o: include/sprite.h
 CMakeFiles/code_name.dir/src/graphics/sprite.cpp.o: src/graphics/sprite.cpp
@@ -16,11 +17,10 @@ CMakeFiles/code_name.dir/src/items/item.cpp.o: src/items/item.h
 CMakeFiles/code_name.dir/src/mob/mob.cpp.o: src/items/item.h
 CMakeFiles/code_name.dir/src/mob/mob.cpp.o: src/mob/mob.cpp
 CMakeFiles/code_name.dir/src/mob/mob.cpp.o: src/mob/mob.h
-CMakeFiles/code_name.dir/src/mob/mob.cpp.o: src/util/m_uuid.h
 
 CMakeFiles/code_name.dir/src/mob/mob_manager.cpp.o: src/mob/mob_manager.cpp
 CMakeFiles/code_name.dir/src/mob/mob_manager.cpp.o: src/mob/mob_manager.h
 
-CMakeFiles/code_name.dir/src/util/m_uuid.cpp.o: src/util/m_uuid.cpp
-CMakeFiles/code_name.dir/src/util/m_uuid.cpp.o: src/util/m_uuid.h
+CMakeFiles/code_name.dir/src/windowing/game_winda.cpp.o: src/windowing/game_winda.cpp
+CMakeFiles/code_name.dir/src/windowing/game_winda.cpp.o: src/windowing/game_winda.h
 

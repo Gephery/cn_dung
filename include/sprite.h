@@ -3,6 +3,7 @@
 //
 #include <SDL2_image/SDL_image.h>
 #include <map>
+#include <string>
 
 #ifndef CODE_NAME_SPRITE_PIECE_H
 #define CODE_NAME_SPRITE_PIECE_H

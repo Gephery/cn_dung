@@ -1,24 +1,15 @@
 #include <SDL2/SDL.h>
 #include <SDL2_image/SDL_image.h>
 #include "include/sprite.h"
-
-bool init(SDL_Window** g_window, SDL_Surface** g_surface, char game_nickname[], int** screen_width, int** screen_height);
-void quit(SDL_Window** g_window, SDL_Surface** g_surface);
+#include "src/windowing/game_winda.h"
 
 int main(void)
 {
-  int* screen_width = nullptr;
-  int* screen_height = nullptr;
-  char game_nickname[] = "CN Dung";
-
-  SDL_Window* g_window = nullptr;
-  SDL_Surface* g_surface = nullptr;
-  SDL_GLContext context;
 
   // Testing zone
-  bool yea = init(&g_window, &g_surface, game_nickname, &screen_width, &screen_height);
+  bool yea = GameWinda::Init();
   //Testing ZONE---------------------------------------
-  SpritePiece* piece = new SpritePiece("../assets/laz.png", g_surface->format);
+  SpritePiece* piece = new SpritePiece((char *) "../assets/laz.png", GameWinda::GetSurface()->format);
   SDL_Surface* img = piece->GetImg();
 
   SDL_Rect rect;
@@ -26,15 +17,14 @@ int main(void)
   rect.y = 0;
   rect.h = img->h;
   rect.w = img->w;
-  SDL_Surface* temp_win = SDL_GetWindowSurface(g_window);
-  Uint32 color = SDL_MapRGB(g_surface->format, 255, 255, 255);
+  SDL_Surface* temp_win = SDL_GetWindowSurface(GameWinda::GetWindow());
+  Uint32 color = SDL_MapRGB(GameWinda::GetSurface()->format, 255, 255, 255);
   //SDL_FillRect(img, NULL, color);
   SDL_BlitSurface(img, NULL, temp_win, &rect);
-  SDL_UpdateWindowSurface(g_window);
+  SDL_UpdateWindowSurface(GameWinda::GetWindow());
 
   //End testing Zone------------------------------------
   if (yea) {
-
     // Way the game can stop
     // NOTE: Game may not close as fast as window, may do background stuff first.
     bool running = true;
@@ -49,64 +39,11 @@ int main(void)
         if (event.type == SDL_QUIT)
         {
           running = false;
-          quit(&g_window, &g_surface);
+          GameWinda::Quit();
           break;
         }
       }
     }
   }
   return 0;
-}
-
-// Starts up libraries and hooks into major things such as window.
-bool init(SDL_Window** g_window, SDL_Surface** g_surface,
-           char game_nickname[], int** screen_width, int** screen_height)
-{
-  bool success = SDL_Init(SDL_INIT_EVERYTHING) == 0;
-
-  if (success) {
-    Uint32 sld_flags = SDL_WINDOW_OPENGL | // Telling it there will be openGL.
-                       SDL_WINDOW_RESIZABLE |
-                       SDL_WINDOW_SHOWN |
-                       SDL_WINDOW_MAXIMIZED; // Window starts maximized
-
-    *g_window = SDL_CreateWindow(game_nickname, 0, 0, 0, 0, sld_flags);
-
-    success = g_window != NULL; // Check if window creation a success
-
-    // SDL libs inits
-    if (success)
-    {
-      SDL_GetWindowSize(*g_window, *screen_width, *screen_height); // Sets up easy access w and h.
-
-      *g_surface = SDL_GetWindowSurface(*g_window);
-      success = g_surface != NULL;
-      SDL_SetWindowResizable(*g_window, SDL_FALSE);
-    }
-    if (!success)
-      printf("Error in starting SDL: %s ", SDL_GetError());
-
-    // SDL_image init
-    if (success)
-    {
-      int img_flags = IMG_INIT_PNG;
-      bool img_init_succ = (IMG_Init(img_flags)&img_flags) == img_flags;
-      if (!img_init_succ)
-          printf("Error in starting SDL_IMG: %s", IMG_GetError());
-      success &= img_init_succ;
-    }
-  }
-
-  if (success) printf("Successful load of SDL and SDL_image.");
-  return success;
-}
-
-// Quits out all the libraries and does major garbage collection.
-void quit(SDL_Window** g_window, SDL_Surface** g_surface) {
-  SDL_DestroyWindow(*g_window);
-  g_window = NULL;
-  SDL_FreeSurface(*g_surface);
-
-  IMG_Quit();
-  SDL_Quit();
 }

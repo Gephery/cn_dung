@@ -5,12 +5,11 @@
 #ifndef CODE_NAME_ZOMBIE_LEG_H
 #define CODE_NAME_ZOMBIE_LEG_H
 
-#include <string>
-
-struct
+enum PartCode
 {
-    std::string path;
 
-};
+}
+
+enum 
 
 #endif //CODE_NAME_ZOMBIE_LEG_H

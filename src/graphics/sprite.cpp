@@ -2,7 +2,6 @@
 // Created by Max Grucella on 6/14/17.
 //
 
-#include <string>
 #include "../../include/sprite.h"
 
 SpritePiece::SpritePiece(char path[], SDL_PixelFormat* format)
@@ -27,7 +26,7 @@ bool SpritePiece::IsLoaded()
     return img_ != NULL;
 }
 
-SDL_Surface *SpritePiece::GetImg()
+SDL_Surface* SpritePiece::GetImg()
 {
     return img_;
 }

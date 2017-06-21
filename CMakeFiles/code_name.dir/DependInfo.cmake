@@ -4,13 +4,13 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/Users/gephery/clionprojects/code-name/main.cpp" "/Users/gephery/clionprojects/code-name/CMakeFiles/code_name.dir/main.cpp.o"
-  "/Users/gephery/clionprojects/code-name/src/graphics/sprite.cpp" "/Users/gephery/clionprojects/code-name/CMakeFiles/code_name.dir/src/graphics/sprite.cpp.o"
-  "/Users/gephery/clionprojects/code-name/src/graphics/sprite_back.cpp" "/Users/gephery/clionprojects/code-name/CMakeFiles/code_name.dir/src/graphics/sprite_back.cpp.o"
-  "/Users/gephery/clionprojects/code-name/src/items/item.cpp" "/Users/gephery/clionprojects/code-name/CMakeFiles/code_name.dir/src/items/item.cpp.o"
-  "/Users/gephery/clionprojects/code-name/src/mob/mob.cpp" "/Users/gephery/clionprojects/code-name/CMakeFiles/code_name.dir/src/mob/mob.cpp.o"
-  "/Users/gephery/clionprojects/code-name/src/mob/mob_manager.cpp" "/Users/gephery/clionprojects/code-name/CMakeFiles/code_name.dir/src/mob/mob_manager.cpp.o"
-  "/Users/gephery/clionprojects/code-name/src/util/m_uuid.cpp" "/Users/gephery/clionprojects/code-name/CMakeFiles/code_name.dir/src/util/m_uuid.cpp.o"
+  "/users/gephery/github/code-name/main.cpp" "/users/gephery/github/code-name/CMakeFiles/code_name.dir/main.cpp.o"
+  "/users/gephery/github/code-name/src/graphics/sprite.cpp" "/users/gephery/github/code-name/CMakeFiles/code_name.dir/src/graphics/sprite.cpp.o"
+  "/users/gephery/github/code-name/src/graphics/sprite_back.cpp" "/users/gephery/github/code-name/CMakeFiles/code_name.dir/src/graphics/sprite_back.cpp.o"
+  "/users/gephery/github/code-name/src/items/item.cpp" "/users/gephery/github/code-name/CMakeFiles/code_name.dir/src/items/item.cpp.o"
+  "/users/gephery/github/code-name/src/mob/mob.cpp" "/users/gephery/github/code-name/CMakeFiles/code_name.dir/src/mob/mob.cpp.o"
+  "/users/gephery/github/code-name/src/mob/mob_manager.cpp" "/users/gephery/github/code-name/CMakeFiles/code_name.dir/src/mob/mob_manager.cpp.o"
+  "/users/gephery/github/code-name/src/windowing/game_winda.cpp" "/users/gephery/github/code-name/CMakeFiles/code_name.dir/src/windowing/game_winda.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "AppleClang")
 

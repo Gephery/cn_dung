@@ -54,10 +54,10 @@ RM = /usr/local/Cellar/cmake/3.8.2/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/gephery/clionprojects/code-name
+CMAKE_SOURCE_DIR = /users/gephery/github/code-name
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/gephery/clionprojects/code-name
+CMAKE_BINARY_DIR = /users/gephery/github/code-name
 
 #=============================================================================
 # Target rules for target CMakeFiles/code_name.dir
@@ -66,7 +66,7 @@ CMAKE_BINARY_DIR = /Users/gephery/clionprojects/code-name
 CMakeFiles/code_name.dir/all:
 	$(MAKE) -f CMakeFiles/code_name.dir/build.make CMakeFiles/code_name.dir/depend
 	$(MAKE) -f CMakeFiles/code_name.dir/build.make CMakeFiles/code_name.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/gephery/clionprojects/code-name/CMakeFiles --progress-num=1,2,3,4,5,6,7,8 "Built target code_name"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/users/gephery/github/code-name/CMakeFiles --progress-num=1,2,3,4,5,6,7,8 "Built target code_name"
 .PHONY : CMakeFiles/code_name.dir/all
 
 # Include target in all.
@@ -76,9 +76,9 @@ all: CMakeFiles/code_name.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/code_name.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/gephery/clionprojects/code-name/CMakeFiles 8
+	$(CMAKE_COMMAND) -E cmake_progress_start /users/gephery/github/code-name/CMakeFiles 8
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/code_name.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/gephery/clionprojects/code-name/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /users/gephery/github/code-name/CMakeFiles 0
 .PHONY : CMakeFiles/code_name.dir/rule
 
 # Convenience name for target.
