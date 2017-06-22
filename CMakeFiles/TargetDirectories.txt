@@ -1,3 +1,0 @@
-/users/gephery/github/code-name/CMakeFiles/rebuild_cache.dir
-/users/gephery/github/code-name/CMakeFiles/edit_cache.dir
-/users/gephery/github/code-name/CMakeFiles/code_name.dir

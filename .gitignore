@@ -1,0 +1,18 @@
+# Cmake stuff
+/build
+/CMakeFiles
+/cmake-build-debug
+CMakeCache.txt
+Makefile
+cmake_install.cmake
+.git
+.hg
+.svn
+.DS_Store
+._*
+Thumbs.db
+desktop.ini
+CMakeFiles
+cmake
+cmake-build-debug
+.idea
