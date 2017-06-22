@@ -225,6 +225,54 @@ CMakeFiles/code_name.dir/src/windowing/game_winda.cpp.o.provides: CMakeFiles/cod
 CMakeFiles/code_name.dir/src/windowing/game_winda.cpp.o.provides.build: CMakeFiles/code_name.dir/src/windowing/game_winda.cpp.o
 
 
+CMakeFiles/code_name.dir/src/windowing/fonter.cpp.o: CMakeFiles/code_name.dir/flags.make
+CMakeFiles/code_name.dir/src/windowing/fonter.cpp.o: src/windowing/fonter.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/users/gephery/github/code-name/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/code_name.dir/src/windowing/fonter.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/code_name.dir/src/windowing/fonter.cpp.o -c /users/gephery/github/code-name/src/windowing/fonter.cpp
+
+CMakeFiles/code_name.dir/src/windowing/fonter.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/code_name.dir/src/windowing/fonter.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /users/gephery/github/code-name/src/windowing/fonter.cpp > CMakeFiles/code_name.dir/src/windowing/fonter.cpp.i
+
+CMakeFiles/code_name.dir/src/windowing/fonter.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/code_name.dir/src/windowing/fonter.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /users/gephery/github/code-name/src/windowing/fonter.cpp -o CMakeFiles/code_name.dir/src/windowing/fonter.cpp.s
+
+CMakeFiles/code_name.dir/src/windowing/fonter.cpp.o.requires:
+
+.PHONY : CMakeFiles/code_name.dir/src/windowing/fonter.cpp.o.requires
+
+CMakeFiles/code_name.dir/src/windowing/fonter.cpp.o.provides: CMakeFiles/code_name.dir/src/windowing/fonter.cpp.o.requires
+	$(MAKE) -f CMakeFiles/code_name.dir/build.make CMakeFiles/code_name.dir/src/windowing/fonter.cpp.o.provides.build
+.PHONY : CMakeFiles/code_name.dir/src/windowing/fonter.cpp.o.provides
+
+CMakeFiles/code_name.dir/src/windowing/fonter.cpp.o.provides.build: CMakeFiles/code_name.dir/src/windowing/fonter.cpp.o
+
+
+CMakeFiles/code_name.dir/src/windowing/winda_box.cpp.o: CMakeFiles/code_name.dir/flags.make
+CMakeFiles/code_name.dir/src/windowing/winda_box.cpp.o: src/windowing/winda_box.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/users/gephery/github/code-name/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/code_name.dir/src/windowing/winda_box.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/code_name.dir/src/windowing/winda_box.cpp.o -c /users/gephery/github/code-name/src/windowing/winda_box.cpp
+
+CMakeFiles/code_name.dir/src/windowing/winda_box.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/code_name.dir/src/windowing/winda_box.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /users/gephery/github/code-name/src/windowing/winda_box.cpp > CMakeFiles/code_name.dir/src/windowing/winda_box.cpp.i
+
+CMakeFiles/code_name.dir/src/windowing/winda_box.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/code_name.dir/src/windowing/winda_box.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /users/gephery/github/code-name/src/windowing/winda_box.cpp -o CMakeFiles/code_name.dir/src/windowing/winda_box.cpp.s
+
+CMakeFiles/code_name.dir/src/windowing/winda_box.cpp.o.requires:
+
+.PHONY : CMakeFiles/code_name.dir/src/windowing/winda_box.cpp.o.requires
+
+CMakeFiles/code_name.dir/src/windowing/winda_box.cpp.o.provides: CMakeFiles/code_name.dir/src/windowing/winda_box.cpp.o.requires
+	$(MAKE) -f CMakeFiles/code_name.dir/build.make CMakeFiles/code_name.dir/src/windowing/winda_box.cpp.o.provides.build
+.PHONY : CMakeFiles/code_name.dir/src/windowing/winda_box.cpp.o.provides
+
+CMakeFiles/code_name.dir/src/windowing/winda_box.cpp.o.provides.build: CMakeFiles/code_name.dir/src/windowing/winda_box.cpp.o
+
+
 # Object files for target code_name
 code_name_OBJECTS = \
 "CMakeFiles/code_name.dir/main.cpp.o" \
@@ -233,7 +281,9 @@ code_name_OBJECTS = \
 "CMakeFiles/code_name.dir/src/mob/mob.cpp.o" \
 "CMakeFiles/code_name.dir/src/items/item.cpp.o" \
 "CMakeFiles/code_name.dir/src/mob/mob_manager.cpp.o" \
-"CMakeFiles/code_name.dir/src/windowing/game_winda.cpp.o"
+"CMakeFiles/code_name.dir/src/windowing/game_winda.cpp.o" \
+"CMakeFiles/code_name.dir/src/windowing/fonter.cpp.o" \
+"CMakeFiles/code_name.dir/src/windowing/winda_box.cpp.o"
 
 # External object files for target code_name
 code_name_EXTERNAL_OBJECTS =
@@ -245,9 +295,11 @@ build/code_name: CMakeFiles/code_name.dir/src/mob/mob.cpp.o
 build/code_name: CMakeFiles/code_name.dir/src/items/item.cpp.o
 build/code_name: CMakeFiles/code_name.dir/src/mob/mob_manager.cpp.o
 build/code_name: CMakeFiles/code_name.dir/src/windowing/game_winda.cpp.o
+build/code_name: CMakeFiles/code_name.dir/src/windowing/fonter.cpp.o
+build/code_name: CMakeFiles/code_name.dir/src/windowing/winda_box.cpp.o
 build/code_name: CMakeFiles/code_name.dir/build.make
 build/code_name: CMakeFiles/code_name.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/users/gephery/github/code-name/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX executable build/code_name"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/users/gephery/github/code-name/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Linking CXX executable build/code_name"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/code_name.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -262,6 +314,8 @@ CMakeFiles/code_name.dir/requires: CMakeFiles/code_name.dir/src/mob/mob.cpp.o.re
 CMakeFiles/code_name.dir/requires: CMakeFiles/code_name.dir/src/items/item.cpp.o.requires
 CMakeFiles/code_name.dir/requires: CMakeFiles/code_name.dir/src/mob/mob_manager.cpp.o.requires
 CMakeFiles/code_name.dir/requires: CMakeFiles/code_name.dir/src/windowing/game_winda.cpp.o.requires
+CMakeFiles/code_name.dir/requires: CMakeFiles/code_name.dir/src/windowing/fonter.cpp.o.requires
+CMakeFiles/code_name.dir/requires: CMakeFiles/code_name.dir/src/windowing/winda_box.cpp.o.requires
 
 .PHONY : CMakeFiles/code_name.dir/requires
 

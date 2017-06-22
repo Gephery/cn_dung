@@ -3,6 +3,7 @@
 
 CMakeFiles/code_name.dir/main.cpp.o: include/sprite.h
 CMakeFiles/code_name.dir/main.cpp.o: main.cpp
+CMakeFiles/code_name.dir/main.cpp.o: src/windowing/fonter.h
 CMakeFiles/code_name.dir/main.cpp.o: src/windowing/game_winda.h
 
 CMakeFiles/code_name.dir/src/graphics/sprite.cpp.o: include/sprite.h
@@ -21,6 +22,13 @@ CMakeFiles/code_name.dir/src/mob/mob.cpp.o: src/mob/mob.h
 CMakeFiles/code_name.dir/src/mob/mob_manager.cpp.o: src/mob/mob_manager.cpp
 CMakeFiles/code_name.dir/src/mob/mob_manager.cpp.o: src/mob/mob_manager.h
 
+CMakeFiles/code_name.dir/src/windowing/fonter.cpp.o: src/windowing/fonter.cpp
+CMakeFiles/code_name.dir/src/windowing/fonter.cpp.o: src/windowing/fonter.h
+
+CMakeFiles/code_name.dir/src/windowing/game_winda.cpp.o: src/windowing/fonter.h
 CMakeFiles/code_name.dir/src/windowing/game_winda.cpp.o: src/windowing/game_winda.cpp
 CMakeFiles/code_name.dir/src/windowing/game_winda.cpp.o: src/windowing/game_winda.h
+
+CMakeFiles/code_name.dir/src/windowing/winda_box.cpp.o: src/windowing/winda_box.cpp
+CMakeFiles/code_name.dir/src/windowing/winda_box.cpp.o: src/windowing/winda_box.h
 

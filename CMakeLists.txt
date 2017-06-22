@@ -16,6 +16,10 @@ add_executable( code_name main.cpp
                 src/mob/mob_manager.h
                 src/windowing/game_winda.cpp
                 src/windowing/game_winda.h
+                src/windowing/fonter.h
+                src/windowing/fonter.cpp
+                src/windowing/winda_box.h
+                src/windowing/winda_box.cpp
               )
 
 IF ( APPLE )

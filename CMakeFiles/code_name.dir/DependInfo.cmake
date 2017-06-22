@@ -10,7 +10,9 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/users/gephery/github/code-name/src/items/item.cpp" "/users/gephery/github/code-name/CMakeFiles/code_name.dir/src/items/item.cpp.o"
   "/users/gephery/github/code-name/src/mob/mob.cpp" "/users/gephery/github/code-name/CMakeFiles/code_name.dir/src/mob/mob.cpp.o"
   "/users/gephery/github/code-name/src/mob/mob_manager.cpp" "/users/gephery/github/code-name/CMakeFiles/code_name.dir/src/mob/mob_manager.cpp.o"
+  "/users/gephery/github/code-name/src/windowing/fonter.cpp" "/users/gephery/github/code-name/CMakeFiles/code_name.dir/src/windowing/fonter.cpp.o"
   "/users/gephery/github/code-name/src/windowing/game_winda.cpp" "/users/gephery/github/code-name/CMakeFiles/code_name.dir/src/windowing/game_winda.cpp.o"
+  "/users/gephery/github/code-name/src/windowing/winda_box.cpp" "/users/gephery/github/code-name/CMakeFiles/code_name.dir/src/windowing/winda_box.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "AppleClang")
 

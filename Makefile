@@ -285,6 +285,33 @@ src/mob/mob_manager.cpp.s:
 	$(MAKE) -f CMakeFiles/code_name.dir/build.make CMakeFiles/code_name.dir/src/mob/mob_manager.cpp.s
 .PHONY : src/mob/mob_manager.cpp.s
 
+src/windowing/fonter.o: src/windowing/fonter.cpp.o
+
+.PHONY : src/windowing/fonter.o
+
+# target to build an object file
+src/windowing/fonter.cpp.o:
+	$(MAKE) -f CMakeFiles/code_name.dir/build.make CMakeFiles/code_name.dir/src/windowing/fonter.cpp.o
+.PHONY : src/windowing/fonter.cpp.o
+
+src/windowing/fonter.i: src/windowing/fonter.cpp.i
+
+.PHONY : src/windowing/fonter.i
+
+# target to preprocess a source file
+src/windowing/fonter.cpp.i:
+	$(MAKE) -f CMakeFiles/code_name.dir/build.make CMakeFiles/code_name.dir/src/windowing/fonter.cpp.i
+.PHONY : src/windowing/fonter.cpp.i
+
+src/windowing/fonter.s: src/windowing/fonter.cpp.s
+
+.PHONY : src/windowing/fonter.s
+
+# target to generate assembly for a file
+src/windowing/fonter.cpp.s:
+	$(MAKE) -f CMakeFiles/code_name.dir/build.make CMakeFiles/code_name.dir/src/windowing/fonter.cpp.s
+.PHONY : src/windowing/fonter.cpp.s
+
 src/windowing/game_winda.o: src/windowing/game_winda.cpp.o
 
 .PHONY : src/windowing/game_winda.o
@@ -311,6 +338,33 @@ src/windowing/game_winda.s: src/windowing/game_winda.cpp.s
 src/windowing/game_winda.cpp.s:
 	$(MAKE) -f CMakeFiles/code_name.dir/build.make CMakeFiles/code_name.dir/src/windowing/game_winda.cpp.s
 .PHONY : src/windowing/game_winda.cpp.s
+
+src/windowing/winda_box.o: src/windowing/winda_box.cpp.o
+
+.PHONY : src/windowing/winda_box.o
+
+# target to build an object file
+src/windowing/winda_box.cpp.o:
+	$(MAKE) -f CMakeFiles/code_name.dir/build.make CMakeFiles/code_name.dir/src/windowing/winda_box.cpp.o
+.PHONY : src/windowing/winda_box.cpp.o
+
+src/windowing/winda_box.i: src/windowing/winda_box.cpp.i
+
+.PHONY : src/windowing/winda_box.i
+
+# target to preprocess a source file
+src/windowing/winda_box.cpp.i:
+	$(MAKE) -f CMakeFiles/code_name.dir/build.make CMakeFiles/code_name.dir/src/windowing/winda_box.cpp.i
+.PHONY : src/windowing/winda_box.cpp.i
+
+src/windowing/winda_box.s: src/windowing/winda_box.cpp.s
+
+.PHONY : src/windowing/winda_box.s
+
+# target to generate assembly for a file
+src/windowing/winda_box.cpp.s:
+	$(MAKE) -f CMakeFiles/code_name.dir/build.make CMakeFiles/code_name.dir/src/windowing/winda_box.cpp.s
+.PHONY : src/windowing/winda_box.cpp.s
 
 # Help Target
 help:
@@ -339,9 +393,15 @@ help:
 	@echo "... src/mob/mob_manager.o"
 	@echo "... src/mob/mob_manager.i"
 	@echo "... src/mob/mob_manager.s"
+	@echo "... src/windowing/fonter.o"
+	@echo "... src/windowing/fonter.i"
+	@echo "... src/windowing/fonter.s"
 	@echo "... src/windowing/game_winda.o"
 	@echo "... src/windowing/game_winda.i"
 	@echo "... src/windowing/game_winda.s"
+	@echo "... src/windowing/winda_box.o"
+	@echo "... src/windowing/winda_box.i"
+	@echo "... src/windowing/winda_box.s"
 .PHONY : help
 
 

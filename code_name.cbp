@@ -115,10 +115,22 @@
 		<Unit filename="/users/gephery/github/code-name/src/mob/mob_manager.h">
 			<Option target="code_name"/>
 		</Unit>
+		<Unit filename="/users/gephery/github/code-name/src/windowing/fonter.cpp">
+			<Option target="code_name"/>
+		</Unit>
+		<Unit filename="/users/gephery/github/code-name/src/windowing/fonter.h">
+			<Option target="code_name"/>
+		</Unit>
 		<Unit filename="/users/gephery/github/code-name/src/windowing/game_winda.cpp">
 			<Option target="code_name"/>
 		</Unit>
 		<Unit filename="/users/gephery/github/code-name/src/windowing/game_winda.h">
+			<Option target="code_name"/>
+		</Unit>
+		<Unit filename="/users/gephery/github/code-name/src/windowing/winda_box.cpp">
+			<Option target="code_name"/>
+		</Unit>
+		<Unit filename="/users/gephery/github/code-name/src/windowing/winda_box.h">
 			<Option target="code_name"/>
 		</Unit>
 		<Unit filename="/users/gephery/github/code-name/CMakeLists.txt">

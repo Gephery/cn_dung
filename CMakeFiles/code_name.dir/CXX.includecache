@@ -56,6 +56,16 @@ mob_manager.h
 
 /users/gephery/github/code-name/src/mob/mob_manager.h
 
+/users/gephery/github/code-name/src/windowing/fonter.cpp
+fonter.h
+/users/gephery/github/code-name/src/windowing/fonter.h
+
+/users/gephery/github/code-name/src/windowing/fonter.h
+string
+-
+SDL2_ttf/SDL_ttf.h
+-
+
 /users/gephery/github/code-name/src/windowing/game_winda.cpp
 game_winda.h
 /users/gephery/github/code-name/src/windowing/game_winda.h
@@ -65,4 +75,14 @@ SDL2/SDL.h
 -
 SDL2_image/SDL_image.h
 -
+SDL2_ttf/SDL_ttf.h
+-
+fonter.h
+/users/gephery/github/code-name/src/windowing/fonter.h
+
+/users/gephery/github/code-name/src/windowing/winda_box.cpp
+winda_box.h
+/users/gephery/github/code-name/src/windowing/winda_box.h
+
+/users/gephery/github/code-name/src/windowing/winda_box.h
 
