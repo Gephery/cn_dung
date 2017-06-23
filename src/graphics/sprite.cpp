@@ -2,7 +2,7 @@
 // Created by Max Grucella on 6/14/17.
 //
 
-#include "../../include/sprite.h"
+#include "sprite.h"
 
 SpritePiece::SpritePiece(char path[], SDL_PixelFormat* format)
 {

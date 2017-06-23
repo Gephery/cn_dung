@@ -1,6 +1,6 @@
 #include <SDL2/SDL.h>
 #include <SDL2_image/SDL_image.h>
-#include "include/sprite.h"
+#include "src/graphics/sprite.h"
 #include "src/windowing/game_winda.h"
 
 int main(void)

@@ -16,31 +16,31 @@ public:
     // Will return the reference to that slot, but if out of
     // bounds will and if empty will return null.
 
-    int GetCurrentHealth() { return *this->health_current_; }
-    int GetMaxHealth() { return *this->health_max_; }
+    int GetCurrentHealth();
+    int GetMaxHealth();
     void AddHealth(const int health);
-    void SetMaxHealth(const int new_health) { *(this->health_max_) = new_health; }
+    void SetMaxHealth(const int new_health);
     void TakeHealth(const int damage);
 
     // Magic related things
-    int GetCurrentMagic() { return *this->magic_current_; }
-    int GetMaxMagic() { return *this->magic_max_; }
+    int GetCurrentMagic();
+    int GetMaxMagic();
     void AddMagic(const int new_magic);
-    void SetMaxMagic(const int max) { *(this->magic_max_) = max; }
+    void SetMaxMagic(const int max);
     void takeMagic(const int used_magic);
 
-    int GetMovementSpeed() { return *this->movement_speed_; }
-    void SetMovementSpeed(const int speed) { *(this->movement_speed_) = speed; }
+    int GetMovementSpeed();
+    void SetMovementSpeed(const int speed);
 
-    int GetLevel() { return *this->level_; }
-    void SetLevel(const int level) { *(this->level_) = level; }
+    int GetLevel();
+    void SetLevel(const int level);
 
     int GetDamage(const int amount);
-    int GetHealth(const int amount) { return *(health_current_); }
-    bool IsDead() { return health_current_ == 0; }
+    int GetHealth(const int amount);
+    bool IsDead();
 
-    std::list<double>** GetMobTypeFriends() { return &friend_types_; }
-    std::list<double>** GetMobTypeEnemies() { return &enemy_types_; }
+    std::list<double>** GetMobTypeFriends();
+    std::list<double>** GetMobTypeEnemies();
 
     class Inventory
     {

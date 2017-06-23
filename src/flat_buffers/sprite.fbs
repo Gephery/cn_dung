@@ -5,16 +5,17 @@ table SpriPart {
   path:string;
   part_code:short;
   tile_size:byte = 16; // In pixels
-  actions:[Pattern];
+  actions:[Action];
 }
 
-struct Pattern {
+struct Action {
   action_code:short;
   action_lock:short; // Set this to allow frame continuation in animations
   start_x:int; // X of pattern start(pixels)
   start_y:int; // Y of pattern start(pixels)
   frame_number:byte; // How many frames there are for it.
   present_map:[bool]; // False means leave that part empty.
+  animation_speed:short = 100; // 100 for normal speed
 }
 
 root_type SpriteKit;
