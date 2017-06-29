@@ -1,10 +1,12 @@
 #ifndef CODE_NAME_GAME_WINDA_H
 #define CODE_NAME_GAME_WINDA_H
 
+#include <map>
 #include <SDL2/SDL.h>
 #include <SDL2_image/SDL_image.h>
 #include <SDL2_ttf/SDL_ttf.h>
 #include "fonter.h"
+#include "base_box.h"
 
 /**
   * Acts as a single contact to access any windowing part.
@@ -12,7 +14,7 @@
   * All functions can be accessed anywhere. Windows should be handled by it, so only retrive
   * a component if you want to change it, and if there is a function use it instead.
   */
-class GameWinda
+class Winda
 {
   public:
     /** Initializes the components necessary for using Game Winda. To be used before the main game loop. */
@@ -25,12 +27,25 @@ class GameWinda
     static SDL_Window*  GetWindow();
 
     /** Get the surface but do not change the pointer. */
-    static SDL_Surface*  GetSurface() { return main_surface_; }
+    static SDL_Renderer*  GetRenderer() { return renderer_; }
+
+    static int GetWindaWidth();
+    static int GetWindaHeight();
   protected:
     static SDL_Window* main_window_; // Seen as the thing that holds everything.
-    static SDL_Surface* main_surface_; // Seen as the component used by main_window_ to hold everything.
+    static SDL_Renderer* renderer_;
     static int* screen_width_;
     static int* screen_height_;
 };
+
+class TextureManager
+{
+public:
+  static SDL_Texture* LoadAsset(std::string path, SDL_Rect* rect);
+  static void Quit();
+private:
+  static std::map<std::string, SDL_Texture*> assets_; // For closing of all easily.
+};
+
 
 #endif //CODE_NAME_GAME_WINDA_H

@@ -6,21 +6,18 @@ set( SOURCE_FILES main.cpp )
 set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR}/build)
 
 add_executable( code_name main.cpp
-                src/graphics/sprite.cpp
-                src/graphics/sprite.h
-                include/model_data.h
-                src/graphics/sprite_back.cpp
-                src/mob/mob.cpp src/mob/mob.h
+  include/model_data.h
+  src/mob/mob.cpp src/mob/mob.h
                 src/items/item.cpp
                 src/mob/mob_manager.cpp
                 src/mob/mob_manager.h
-                src/windowing/game_winda.cpp
-                src/windowing/game_winda.h
+  src/windowing/winda.cpp
+  src/windowing/winda.h
                 src/windowing/fonter.h
                 src/windowing/fonter.cpp
-                src/windowing/winda_box.cpp
-                src/windowing/winda_box_of_box.cpp
-  src/windowing/winda_box_of_text.cpp src/windowing/winda_box_of_sprite.cpp)
+  src/windowing/base_box.cpp
+  src/windowing/box_of_box.cpp
+  src/windowing/box_of_text.cpp src/windowing/box_of_sprite.cpp src/windowing/texture_manager.cpp src/windowing/boxxer.cpp)
 
 IF ( APPLE )
     TARGET_LINK_LIBRARIES(

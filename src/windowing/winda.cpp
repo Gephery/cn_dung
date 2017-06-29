@@ -1,15 +1,15 @@
-#include "game_winda.h"
+#include "winda.h"
 
 const char WINDA_NAME[10] = "Game Dung";
 
-SDL_Window* GameWinda::main_window_;
-SDL_Surface* GameWinda::main_surface_;
-int* GameWinda::screen_width_;
-int* GameWinda::screen_height_;
+SDL_Window* Winda::main_window_;
+SDL_Renderer* Winda::renderer_;
+int* Winda::screen_width_;
+int* Winda::screen_height_;
 
-SDL_Window*  GameWinda::GetWindow() { return main_window_; }
+SDL_Window*  Winda::GetWindow() { return main_window_; }
 
-bool GameWinda::Init()
+bool Winda::Init()
 {
   bool success = SDL_Init(SDL_INIT_EVERYTHING) == 0;
 
@@ -21,16 +21,17 @@ bool GameWinda::Init()
 
     main_window_ = SDL_CreateWindow(WINDA_NAME, 0, 0, 0, 0, sld_flags);
 
-    success = GameWinda::main_window_ != NULL; // Check if window creation a success
+    success = Winda::main_window_ != NULL; // Check if window creation a success
 
     // SDL libs inits
     if (success)
     {
-      SDL_GetWindowSize(GameWinda::main_window_, GameWinda::screen_width_, GameWinda::screen_height_); // Sets up easy access w and h.
+      SDL_GetWindowSize(main_window_, screen_width_, screen_height_); // Sets up easy access w and h.
 
-      GameWinda::main_surface_ = SDL_GetWindowSurface(GameWinda::main_window_);
-      success = GameWinda::main_surface_ != NULL;
-      SDL_SetWindowResizable(GameWinda::main_window_, SDL_FALSE);
+      renderer_ = SDL_CreateRenderer(main_window_, -1, SDL_RENDERER_ACCELERATED);
+      success = renderer_ != NULL;
+      //Initialize renderer color
+      SDL_SetWindowResizable(Winda::main_window_, SDL_FALSE);
     }
     if (!success)
       printf("Error in starting SDL: %s ", SDL_GetError());
@@ -53,13 +54,26 @@ bool GameWinda::Init()
   return success;
 }
 
-void GameWinda::Quit() {
+void Winda::Quit()
+{
+
+  TextureManager::Quit();
 
   // SDL main stuff closing
   SDL_DestroyWindow(main_window_);
   main_window_ = NULL;
-  SDL_FreeSurface(main_surface_);
+  SDL_DestroyRenderer(renderer_);
 
   IMG_Quit();
   SDL_Quit();
+}
+
+int Winda::GetWindaWidth()
+{
+  return *screen_width_;
+}
+
+int Winda::GetWindaHeight()
+{
+  return *screen_height_;
 }

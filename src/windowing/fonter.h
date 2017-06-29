@@ -44,7 +44,7 @@ public:
   /** Quits all the Fonter things out. NOTE: it is not garbage disposing. */
   static void Quit();
   static SDL_Texture* TexturizeText(FontCode code, FontSize size, SDL_Color* color,
-                                   std::string text, SDL_Renderer* renderer);
+                                   std::string text, SDL_Renderer* renderer, SDL_Rect* box);
 private:
   static TTF_Font* fonts_[];
 };

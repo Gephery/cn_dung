@@ -1,0 +1,7 @@
+namespace dung.model;
+
+table Model {
+  name:string;
+  mob_code:uint;
+  parts:[uint]; // part_codes
+}

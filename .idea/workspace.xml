@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="CMakeRunConfigurationManager" shouldGenerate="true" buildAllGenerated="true">
+  <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true" buildAllGenerated="true">
     <generated>
       <config projectName="code_name" targetName="code_name" />
     </generated>
@@ -12,10 +12,30 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4be04f3c-5a32-41cd-9322-310ec41e7265" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/flat_buffers/mob_pack.fbs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/windowing/base_box.cpp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/windowing/box_of_sprite.cpp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/windowing/texture_manager.cpp" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/flat_buffers/model_pack.fbs" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/graphics/sprite.cpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/graphics/sprite.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/graphics/sprite_back.cpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/windowing/winda_box.cpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/windowing/winda_box_of_sprite.cpp" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/windowing/game_winda.cpp" afterPath="$PROJECT_DIR$/src/windowing/winda.cpp" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/windowing/game_winda.h" afterPath="$PROJECT_DIR$/src/windowing/winda.h" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/windowing/winda_box.h" afterPath="$PROJECT_DIR$/src/windowing/base_box.h" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/windowing/winda_box_of_box.cpp" afterPath="$PROJECT_DIR$/src/windowing/box_of_box.cpp" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/windowing/winda_box_of_text.cpp" afterPath="$PROJECT_DIR$/src/windowing/box_of_text.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CMakeLists.txt" afterPath="$PROJECT_DIR$/CMakeLists.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/code_name.cbp" afterPath="$PROJECT_DIR$/code_name.cbp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/windowing/winda_box.h" afterPath="$PROJECT_DIR$/src/windowing/winda_box.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/windowing/winda_box_of_box.cpp" afterPath="$PROJECT_DIR$/src/windowing/winda_box_of_box.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main.cpp" afterPath="$PROJECT_DIR$/main.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/flat_buffers/sprite.fbs" afterPath="$PROJECT_DIR$/src/flat_buffers/sprite.fbs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/mob/mob.h" afterPath="$PROJECT_DIR$/src/mob/mob.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/windowing/fonter.cpp" afterPath="$PROJECT_DIR$/src/windowing/fonter.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/windowing/fonter.h" afterPath="$PROJECT_DIR$/src/windowing/fonter.h" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <ignored path="$PROJECT_DIR$/CMakeFiles/" />
@@ -34,48 +54,92 @@
     <favorites_list name="code_name" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.45931283">
+    <splitter split-orientation="horizontal" split-proportion="0.5132383">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="winda_box_of_box.cpp" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/src/windowing/winda_box_of_box.cpp">
+          <file leaf-file-name="box_of_text.cpp" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/windowing/box_of_text.cpp">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="378">
-                  <caret line="23" column="22" lean-forward="true" selection-start-line="23" selection-start-column="22" selection-end-line="23" selection-end-column="22" />
+                <state relative-caret-position="166">
+                  <caret line="31" column="0" lean-forward="true" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
                   <folding>
-                    <element signature="e#646#748#0" expanded="false" />
+                    <element signature="e#419#492#0" expanded="false" />
+                    <element signature="e#494#556#0" expanded="false" />
+                    <element signature="e#812#865#0" expanded="false" />
+                    <element signature="e#867#934#0" expanded="false" />
+                    <element signature="e#936#994#0" expanded="false" />
+                    <element signature="e#996#1063#0" expanded="false" />
+                    <element signature="e#1065#1123#0" expanded="false" />
+                    <element signature="e#1207#1273#0" expanded="false" />
                   </folding>
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="winda_box_of_text.cpp" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/windowing/winda_box_of_text.cpp">
+          <file leaf-file-name="main.cpp" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/main.cpp">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="702">
-                  <caret line="72" column="0" lean-forward="false" selection-start-line="72" selection-start-column="0" selection-end-line="72" selection-end-column="0" />
+                <state relative-caret-position="424">
+                  <caret line="40" column="0" lean-forward="false" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
                   <folding>
-                    <element signature="e#70#845#0" expanded="false" />
-                    <element signature="e#847#995#0" expanded="false" />
-                    <element signature="e#997#1075#0" expanded="false" />
-                    <element signature="e#1077#1144#0" expanded="false" />
-                    <element signature="e#1146#1355#0" expanded="false" />
-                    <element signature="e#1357#1414#0" expanded="false" />
-                    <element signature="e#1416#1488#0" expanded="false" />
-                    <element signature="e#1490#1553#0" expanded="false" />
-                    <element signature="e#1555#1627#0" expanded="false" />
-                    <element signature="e#1629#1692#0" expanded="false" />
+                    <element signature="e#0#21#0" expanded="true" />
                   </folding>
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="winda_box_of_sprite.cpp" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/windowing/winda_box_of_sprite.cpp">
+          <file leaf-file-name="base_box.cpp" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/windowing/base_box.cpp">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="108">
-                  <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+                <state relative-caret-position="90">
+                  <caret line="6" column="16" lean-forward="false" selection-start-line="6" selection-start-column="16" selection-end-line="6" selection-end-column="16" />
+                  <folding>
+                    <element signature="e#305#333#0" expanded="false" />
+                    <element signature="e#335#371#0" expanded="false" />
+                    <element signature="e#615#678#0" expanded="false" />
+                    <element signature="e#680#733#0" expanded="false" />
+                    <element signature="e#735#782#0" expanded="false" />
+                    <element signature="e#784#833#0" expanded="false" />
+                    <element signature="e#835#895#0" expanded="false" />
+                    <element signature="e#897#944#0" expanded="false" />
+                    <element signature="e#946#1004#0" expanded="false" />
+                    <element signature="e#1006#1059#0" expanded="false" />
+                    <element signature="e#1061#1127#0" expanded="false" />
+                    <element signature="e#1129#1184#0" expanded="false" />
+                    <element signature="e#1186#1250#0" expanded="false" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="boxxer.cpp" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/windowing/boxxer.cpp">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="615">
+                  <caret line="41" column="21" lean-forward="true" selection-start-line="41" selection-start-column="21" selection-end-line="41" selection-end-column="21" />
                   <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="box_of_sprite.cpp" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/windowing/box_of_sprite.cpp">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="165">
+                  <caret line="11" column="22" lean-forward="false" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="box_of_box.cpp" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/windowing/box_of_box.cpp">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="1020">
+                  <caret line="68" column="27" lean-forward="true" selection-start-line="68" selection-start-column="27" selection-end-line="68" selection-end-column="27" />
+                  <folding>
+                    <element signature="e#1456#1547#0" expanded="false" />
+                  </folding>
                 </state>
               </provider>
             </entry>
@@ -84,34 +148,29 @@
       </split-first>
       <split-second>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="winda_box.h" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/src/windowing/winda_box.h">
+          <file leaf-file-name="winda.h" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/windowing/winda.h">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="337">
-                  <caret line="82" column="14" lean-forward="true" selection-start-line="82" selection-start-column="14" selection-end-line="82" selection-end-column="14" />
+                <state relative-caret-position="616">
+                  <caret line="44" column="21" lean-forward="false" selection-start-line="44" selection-start-column="21" selection-end-line="44" selection-end-column="21" />
                   <folding>
-                    <element signature="e#61#82#0" expanded="true" />
+                    <element signature="e#63#77#0" expanded="true" />
                   </folding>
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="sprite.fbs" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/flat_buffers/sprite.fbs">
+          <file leaf-file-name="base_box.h" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/windowing/base_box.h">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="306">
-                  <caret line="17" column="54" lean-forward="false" selection-start-line="17" selection-start-column="54" selection-end-line="17" selection-end-column="54" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="model_pack.fbs" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/flat_buffers/model_pack.fbs">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="0">
-                  <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-                  <folding />
+                <state relative-caret-position="16">
+                  <caret line="109" column="21" lean-forward="false" selection-start-line="109" selection-start-column="21" selection-end-line="109" selection-end-column="21" />
+                  <folding>
+                    <element signature="e#61#82#0" expanded="true" />
+                    <element signature="e#510#1598#1" expanded="false" />
+                    <element signature="e#1772#2484#1" expanded="false" />
+                    <element signature="e#3195#3332#1" expanded="false" />
+                  </folding>
                 </state>
               </provider>
             </entry>
@@ -133,6 +192,7 @@
       <find>)</find>
       <find>lSDL2</find>
       <find>lSDL2_image</find>
+      <find>SDL_Rect *</find>
     </findStrings>
     <replaceStrings>
       <replace>)</replace>
@@ -144,12 +204,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/DungConfig.h" />
-        <option value="$PROJECT_DIR$/graphics/SpritePiece.cpp" />
-        <option value="$PROJECT_DIR$/FindSDL2.cmake" />
-        <option value="$PROJECT_DIR$/FindSDL2_image.cmake" />
-        <option value="$PROJECT_DIR$/cmake/FindSDL2.cmake" />
-        <option value="$PROJECT_DIR$/headers/sprite_piece.h" />
         <option value="$PROJECT_DIR$/graphics/df.h" />
         <option value="$PROJECT_DIR$/graphics/df.cpp" />
         <option value="$PROJECT_DIR$/graphics/d.cpp" />
@@ -162,7 +216,6 @@
         <option value="$PROJECT_DIR$/headers/sprite_pack_data.h" />
         <option value="$PROJECT_DIR$/headers/model_data.h" />
         <option value="$PROJECT_DIR$/headers/sprite_data.h" />
-        <option value="$PROJECT_DIR$/src/graphics/sprite.cpp" />
         <option value="$PROJECT_DIR$/src/graphics/sprite_back.cpp" />
         <option value="$PROJECT_DIR$/src/items/item.h" />
         <option value="$PROJECT_DIR$/src/attributes/attribute.h" />
@@ -171,19 +224,37 @@
         <option value="$PROJECT_DIR$/src/graphics/mob_model.h" />
         <option value="$PROJECT_DIR$/src/mob/Inventory.h" />
         <option value="$PROJECT_DIR$/src/mob/mob_manager.h" />
-        <option value="$PROJECT_DIR$/main.cpp" />
-        <option value="$PROJECT_DIR$/src/windowing/game_winda.cpp" />
-        <option value="$PROJECT_DIR$/src/windowing/game_winda.h" />
-        <option value="$PROJECT_DIR$/src/mob/mob.h" />
         <option value="$PROJECT_DIR$/CMakeLists.txt" />
-        <option value="$PROJECT_DIR$/src/windowing/winda_box.cpp" />
-        <option value="$PROJECT_DIR$/src/windowing/fonter.cpp" />
-        <option value="$PROJECT_DIR$/src/windowing/fonter.h" />
-        <option value="$PROJECT_DIR$/src/windowing/winda_box_of_text.cpp" />
+        <option value="$PROJECT_DIR$/src/graphics/asset_manager.cpp" />
+        <option value="$PROJECT_DIR$/src/graphics/asset_manager.h" />
+        <option value="$PROJECT_DIR$/src/graphics/sprite_manager.h" />
+        <option value="$PROJECT_DIR$/src/graphics/sprite_manager.cpp" />
+        <option value="$PROJECT_DIR$/src/windowing/game_winda.h" />
+        <option value="$PROJECT_DIR$/src/windowing/game_winda.cpp" />
+        <option value="$PROJECT_DIR$/src/graphics/sprite.cpp" />
+        <option value="$PROJECT_DIR$/src/graphics/texture_manager.h" />
+        <option value="$PROJECT_DIR$/src/flat_buffers/model_pack.fbs" />
         <option value="$PROJECT_DIR$/src/windowing/winda_box_of_sprite.cpp" />
-        <option value="$PROJECT_DIR$/src/flat_buffers/sprite.fbs" />
+        <option value="$PROJECT_DIR$/src/windowing/winda_box.cpp" />
         <option value="$PROJECT_DIR$/src/windowing/winda_box_of_box.cpp" />
+        <option value="$PROJECT_DIR$/src/windowing/winda_box_of_text.cpp" />
         <option value="$PROJECT_DIR$/src/windowing/winda_box.h" />
+        <option value="$PROJECT_DIR$/src/windowing/boxxer.h" />
+        <option value="$PROJECT_DIR$/src/mob/mob.h" />
+        <option value="$PROJECT_DIR$/src/windowing/winda.cpp" />
+        <option value="$PROJECT_DIR$/src/windowing/fonter.h" />
+        <option value="$PROJECT_DIR$/src/windowing/fonter.cpp" />
+        <option value="$PROJECT_DIR$/src/windowing/box_item.cpp" />
+        <option value="$PROJECT_DIR$/src/flat_buffers/sprite.fbs" />
+        <option value="$PROJECT_DIR$/src/windowing/box_of_sprite.cpp" />
+        <option value="$PROJECT_DIR$/src/windowing/texture_manager.cpp" />
+        <option value="$PROJECT_DIR$/src/windowing/winda.h" />
+        <option value="$PROJECT_DIR$/src/windowing/base_box.cpp" />
+        <option value="$PROJECT_DIR$/src/windowing/box_of_box.cpp" />
+        <option value="$PROJECT_DIR$/main.cpp" />
+        <option value="$PROJECT_DIR$/src/windowing/boxxer.cpp" />
+        <option value="$PROJECT_DIR$/src/windowing/base_box.h" />
+        <option value="$PROJECT_DIR$/src/windowing/box_of_text.cpp" />
       </list>
     </option>
   </component>
@@ -265,63 +336,13 @@
               <option name="myItemId" value="src" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="windowing" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="code_name" />
-              <option name="myItemType" value="com.jetbrains.cidr.projectView.CidrFilesViewHelper$MyProjectTreeStructure$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="code-name" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="code_name" />
-              <option name="myItemType" value="com.jetbrains.cidr.projectView.CidrFilesViewHelper$MyProjectTreeStructure$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="code-name" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="flat_buffers" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="code_name" />
-              <option name="myItemType" value="com.jetbrains.cidr.projectView.CidrFilesViewHelper$MyProjectTreeStructure$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="code-name" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="include" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.HTML" />
+    <property name="settings.editor.selected.configurable" value="preferences.editor" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="nodejs_interpreter_path" value="/usr/local/bin/node" />
     <property name="js.eslint.eslintPackage" value="" />
@@ -331,20 +352,55 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/windowing" />
       <recent name="$PROJECT_DIR$/src/graphics" />
       <recent name="$PROJECT_DIR$/headers" />
       <recent name="$PROJECT_DIR$/src" />
       <recent name="$PROJECT_DIR$/assets" />
-      <recent name="$PROJECT_DIR$/graphics" />
     </key>
   </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
   <component name="RunManager" selected="Application.code_name">
-    <configuration default="true" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" PASS_PARENT_ENVS_2="true" PROJECT_NAME="code_name" TARGET_NAME="code_name" CONFIG_NAME="Debug" TEST_MODE="SUITE_TEST">
+    <configuration default="true" type="CLion_Remote" factoryName="GDB Remote Debug" remoteCommand="" symbolFile="" sysroot="">
+      <method />
+    </configuration>
+    <configuration default="true" type="CMakeCatchTestRunConfigurationType" factoryName="Catch Test" PASS_PARENT_ENVS_2="true" TEST_MODE="SUITE_TEST">
       <envs />
       <method />
     </configuration>
-    <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="code_name" TARGET_NAME="code_name" CONFIG_NAME="Debug">
+    <configuration default="true" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" PASS_PARENT_ENVS_2="true" PROJECT_NAME="code_name" TARGET_NAME="code_name" CONFIG_NAME="Default" TEST_MODE="SUITE_TEST">
       <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="code_name" TARGET_NAME="code_name" CONFIG_NAME="Default">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="ChromiumRemoteDebugType" factoryName="Chromium Remote">
+      <method />
+    </configuration>
+    <configuration default="true" type="CompoundRunConfigurationType" factoryName="Compound Run Configuration">
+      <method />
+    </configuration>
+    <configuration default="true" type="FirefoxRemoteDebugType" factoryName="Firefox Remote">
+      <method />
+    </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerJest" factoryName="Jest">
+      <node-interpreter value="project" />
+      <working-dir value="" />
+      <envs />
+      <scope-kind value="ALL" />
       <method />
     </configuration>
     <configuration default="true" type="JavaScriptTestRunnerProtractor" factoryName="Protractor">
@@ -354,6 +410,9 @@
       <method />
     </configuration>
     <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
+      <method />
+    </configuration>
+    <configuration default="true" type="NodeWebKit" factoryName="NW.js">
       <method />
     </configuration>
     <configuration default="true" type="PythonConfigurationType" factoryName="Python">
@@ -371,6 +430,13 @@
       <option name="SCRIPT_NAME" value="" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="ReactNative" factoryName="React Native">
+      <node-interpreter value="project" />
+      <platform value="ANDROID" />
+      <envs />
       <method />
     </configuration>
     <configuration default="true" type="Tox" factoryName="Tox">
@@ -383,6 +449,27 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="code-name" />
+      <method />
+    </configuration>
+    <configuration default="true" type="XSLT" factoryName="XSLT">
+      <option name="myOutputFile" />
+      <option name="myOpenOutputFile" value="false" />
+      <option name="myOpenInBrowser" value="false" />
+      <option name="mySmartErrorHandling" value="true" />
+      <option name="myRunnerPort" value="34873" />
+      <option name="myVmArguments" />
+      <option name="myWorkingDirectory" />
+      <option name="myModule" />
+      <option name="myJdk" />
+      <parameters />
+      <OutputType value="CONSOLE" save-to-file="false" />
+      <FileType name="XML" />
+      <JdkChoice value="FROM_MODULE" />
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.grunt" factoryName="Grunt.js">
+      <node-interpreter value="project" />
+      <envs />
       <method />
     </configuration>
     <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
@@ -399,25 +486,6 @@
       <scripts />
       <node-interpreter value="project" />
       <envs />
-      <method />
-    </configuration>
-    <configuration default="true" type="tests" factoryName="Attests">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="code-name" />
-      <option name="SCRIPT_NAME" value="" />
-      <option name="CLASS_NAME" value="" />
-      <option name="METHOD_NAME" value="" />
-      <option name="FOLDER_NAME" value="" />
-      <option name="TEST_TYPE" value="TEST_SCRIPT" />
-      <option name="PATTERN" value="" />
-      <option name="USE_PATTERN" value="false" />
       <method />
     </configuration>
     <configuration default="true" type="tests" factoryName="Doctests">
@@ -449,15 +517,10 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="code-name" />
-      <option name="SCRIPT_NAME" value="" />
-      <option name="CLASS_NAME" value="" />
-      <option name="METHOD_NAME" value="" />
-      <option name="FOLDER_NAME" value="" />
-      <option name="TEST_TYPE" value="TEST_SCRIPT" />
-      <option name="PATTERN" value="" />
-      <option name="USE_PATTERN" value="false" />
-      <option name="PARAMS" value="" />
-      <option name="USE_PARAM" value="false" />
+      <option name="_new_regexPattern" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;.&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method />
     </configuration>
     <configuration default="true" type="tests" factoryName="Unittests">
@@ -470,19 +533,40 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="code-name" />
-      <option name="SCRIPT_NAME" value="" />
-      <option name="CLASS_NAME" value="" />
-      <option name="METHOD_NAME" value="" />
-      <option name="FOLDER_NAME" value="" />
-      <option name="TEST_TYPE" value="TEST_SCRIPT" />
-      <option name="PATTERN" value="" />
-      <option name="USE_PATTERN" value="false" />
-      <option name="PUREUNITTEST" value="true" />
-      <option name="PARAMS" value="" />
-      <option name="USE_PARAM" value="false" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;.&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method />
     </configuration>
     <configuration default="true" type="tests" factoryName="py.test">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="code-name" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;.&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method />
+    </configuration>
+    <configuration default="false" name="Build All" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="code_name" TARGET_NAME="code_name" CONFIG_NAME="Default" RUN_TARGET_PROJECT_NAME="code_name" RUN_TARGET_NAME="code_name">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="code_name" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="code_name" TARGET_NAME="code_name" CONFIG_NAME="Default" RUN_TARGET_PROJECT_NAME="code_name" RUN_TARGET_NAME="code_name">
+      <envs />
+      <method />
+    </configuration>
+    <list size="2">
+      <item index="0" class="java.lang.String" itemvalue="Application.Build All" />
+      <item index="1" class="java.lang.String" itemvalue="Application.code_name" />
+    </list>
+    <configuration default="true" type="tests" factoryName="Attests">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs />
@@ -499,25 +583,8 @@
       <option name="TEST_TYPE" value="TEST_SCRIPT" />
       <option name="PATTERN" value="" />
       <option name="USE_PATTERN" value="false" />
-      <option name="testToRun" value="" />
-      <option name="keywords" value="" />
-      <option name="params" value="" />
-      <option name="USE_PARAM" value="false" />
-      <option name="USE_KEYWORD" value="false" />
       <method />
     </configuration>
-    <configuration default="false" name="code_name" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="code_name" TARGET_NAME="code_name" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="code_name" RUN_TARGET_NAME="code_name">
-      <envs />
-      <method />
-    </configuration>
-    <configuration default="false" name="Build All" type="CMakeRunConfiguration" factoryName="Application" WORKING_DIR="" PASS_PARENT_ENVS_2="true" PROJECT_NAME="code_name" TARGET_NAME="code_name" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="code_name" RUN_TARGET_NAME="code_name">
-      <envs />
-      <method />
-    </configuration>
-    <list size="2">
-      <item index="0" class="java.lang.String" itemvalue="Application.code_name" />
-      <item index="1" class="java.lang.String" itemvalue="Application.Build All" />
-    </list>
   </component>
   <component name="ShelveChangesManager" show_recycled="false">
     <option name="remove_strategy" value="false" />
@@ -540,11 +607,17 @@
       <workItem from="1498222301406" duration="4104000" />
       <workItem from="1498228490071" duration="11323000" />
       <workItem from="1498252386613" duration="289000" />
+      <workItem from="1498319275050" duration="3367000" />
+      <workItem from="1498397912574" duration="65274000" />
+      <workItem from="1498657492012" duration="97000" />
+      <workItem from="1498657732643" duration="1104000" />
+      <workItem from="1498669459417" duration="11323000" />
+      <workItem from="1498741654985" duration="12006000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="108947000" />
+    <option name="totallyTimeSpent" value="202118000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -559,18 +632,19 @@
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14104882" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32867885" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1007326" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32857144" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.18673469" sideWeight="0.4954792" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="CMake" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31530613" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3122449" sideWeight="0.5045208" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.14693877" sideWeight="0.4978903" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32959184" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14693877" sideWeight="0.4978903" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.327551" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.29489797" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2632653" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32967034" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3112245" sideWeight="0.4954792" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -583,14 +657,14 @@
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3112245" sideWeight="0.4954792" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="CMake" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31578946" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="CMake" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31530613" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3122449" sideWeight="0.5045208" order="9" side_tool="true" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.14693877" sideWeight="0.4978903" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32760474" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14285715" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.327551" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.068716094" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3469388" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -607,23 +681,12 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="14" />
+      <option name="time" value="42" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/DungConfig.h" />
-    <entry file="file://$PROJECT_DIR$/graphics/SpritePiece.h" />
-    <entry file="file://$PROJECT_DIR$/graphics/SpritePiece.cpp" />
-    <entry file="file://$PROJECT_DIR$/cmake/FindSDL2_image.cmake" />
-    <entry file="file://$PROJECT_DIR$/cmake/FindSDL2.cmake" />
-    <entry file="file://$APPLICATION_HOME_DIR$/bin/cmake/share/cmake-3.6/Modules/FindPkgConfig.cmake">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="10320">
-          <caret line="645" column="0" lean-forward="false" selection-start-line="645" selection-start-column="0" selection-end-line="645" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$APPLICATION_HOME_DIR$/bin/cmake/share/cmake-3.6/Modules/FindPkgConfig.cmake" />
     <entry file="file:///usr/include/tclDecls.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -634,11 +697,6 @@
     <entry file="file://$PROJECT_DIR$/graphics/df.cpp" />
     <entry file="file://$PROJECT_DIR$/graphics/df.h" />
     <entry file="file://$PROJECT_DIR$/graphics/d.cpp" />
-    <entry file="file://$PROJECT_DIR$/assets/laz.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/assets/max.png">
       <provider selected="true" editor-type-id="images">
         <state />
@@ -671,13 +729,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/graphics/sprite_back.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/headers/model_data.h" />
     <entry file="file://$PROJECT_DIR$/headers/sprite.h" />
     <entry file="file://$PROJECT_DIR$/src/hi.fbs" />
@@ -688,49 +739,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/main.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="10" column="35" lean-forward="false" selection-start-line="10" selection-start-column="35" selection-end-line="10" selection-end-column="35" />
-          <folding>
-            <element signature="e#0#21#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/windowing/winda_box.h">
+    <entry file="file://$PROJECT_DIR$/src/windowing/base_box.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#61#82#0" expanded="true" />
+            <element signature="e#510#1598#1" expanded="false" />
+            <element signature="e#1772#2484#1" expanded="false" />
+            <element signature="e#3195#3332#1" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/windowing/game_winda.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="9" column="40" lean-forward="false" selection-start-line="9" selection-start-column="40" selection-end-line="9" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/graphics/sprite.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="12" column="24" lean-forward="true" selection-start-line="12" selection-start-column="24" selection-end-line="12" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/graphics/sprite.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/graphics/sprite.h" />
     <entry file="file://$PROJECT_DIR$/src/items/item.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="144">
@@ -745,129 +767,187 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/mob/mob.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="18" column="27" lean-forward="false" selection-start-line="18" selection-start-column="27" selection-end-line="18" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/windowing/game_winda.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="468">
-          <caret line="26" column="50" lean-forward="false" selection-start-line="26" selection-start-column="50" selection-end-line="26" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="16" column="42" lean-forward="true" selection-start-line="16" selection-start-column="42" selection-end-line="16" selection-end-column="42" />
+        <state relative-caret-position="54">
+          <caret line="3" column="17" lean-forward="false" selection-start-line="3" selection-start-column="17" selection-end-line="3" selection-end-column="17" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/windowing/winda_box.cpp">
+    <entry file="file://$PROJECT_DIR$/src/graphics/texture_manager.h" />
+    <entry file="file://$PROJECT_DIR$/src/graphics/sprite_back.cpp" />
+    <entry file="file://$PROJECT_DIR$/src/graphics/sprite.cpp" />
+    <entry file="file://$PROJECT_DIR$/src/flat_buffers/sprite_generated.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="574">
-          <caret line="100" column="1" lean-forward="true" selection-start-line="100" selection-start-column="1" selection-end-line="100" selection-end-column="1" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/mob/mob.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="610">
+          <caret line="103" column="11" lean-forward="false" selection-start-line="103" selection-start-column="11" selection-end-line="103" selection-end-column="11" />
           <folding>
-            <element signature="e#24#348#0" expanded="false" />
-            <element signature="e#405#1095#0" expanded="false" />
-            <element signature="e#1158#1219#0" expanded="false" />
-            <element signature="e#1221#1303#0" expanded="false" />
-            <element signature="e#1305#1372#0" expanded="false" />
-            <element signature="e#1374#1468#0" expanded="false" />
-            <element signature="e#1470#1518#0" expanded="false" />
-            <element signature="e#1520#1569#0" expanded="false" />
-            <element signature="e#1571#1609#0" expanded="false" />
-            <element signature="e#1611#1659#0" expanded="false" />
-            <element signature="e#1661#1711#0" expanded="false" />
-            <element signature="e#1713#1774#0" expanded="false" />
-            <element signature="e#1776#1825#0" expanded="false" />
-            <element signature="e#1827#1887#0" expanded="false" />
-            <element signature="e#1889#1943#0" expanded="false" />
-            <element signature="e#1945#2012#0" expanded="false" />
-            <element signature="e#2014#2070#0" expanded="false" />
+            <element signature="e#96#111#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/windowing/fonter.cpp">
+    <entry file="file://$PROJECT_DIR$/assets/laz.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/windowing/winda.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="664">
-          <caret line="59" column="15" lean-forward="true" selection-start-line="59" selection-start-column="15" selection-end-line="59" selection-end-column="15" />
+        <state relative-caret-position="405">
+          <caret line="27" column="5" lean-forward="false" selection-start-line="27" selection-start-column="5" selection-end-line="27" selection-end-column="5" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/windowing/fonter.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="20" column="4" lean-forward="true" selection-start-line="20" selection-start-column="4" selection-end-line="20" selection-end-column="4" />
-          <folding>
-            <element signature="e#55#72#0" expanded="false" />
-          </folding>
+        <state relative-caret-position="571">
+          <caret line="42" column="0" lean-forward="false" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/windowing/winda_box_of_sprite.cpp">
+    <entry file="file://$PROJECT_DIR$/src/windowing/fonter.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+        <state relative-caret-position="46">
+          <caret line="34" column="22" lean-forward="true" selection-start-line="34" selection-start-column="22" selection-end-line="34" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/windowing/box_item.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="9" lean-forward="false" selection-start-line="8" selection-start-column="9" selection-end-line="8" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/flat_buffers/mob_pack.fbs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="29" lean-forward="true" selection-start-line="5" selection-start-column="29" selection-end-line="5" selection-end-column="29" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/flat_buffers/sprite.fbs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="17" column="54" lean-forward="false" selection-start-line="17" selection-start-column="54" selection-end-line="17" selection-end-column="54" />
+        <state relative-caret-position="390">
+          <caret line="26" column="16" lean-forward="true" selection-start-line="26" selection-start-column="16" selection-end-line="26" selection-end-column="16" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/flat_buffers/model_pack.fbs">
+    <entry file="file://$PROJECT_DIR$/src/windowing/texture_manager.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="331">
+          <caret line="23" column="22" lean-forward="false" selection-start-line="23" selection-start-column="22" selection-end-line="23" selection-end-column="22" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/windowing/winda_box_of_text.cpp">
+    <entry file="file://$PROJECT_DIR$/src/windowing/base_box.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="702">
-          <caret line="72" column="0" lean-forward="false" selection-start-line="72" selection-start-column="0" selection-end-line="72" selection-end-column="0" />
+        <state relative-caret-position="90">
+          <caret line="6" column="16" lean-forward="false" selection-start-line="6" selection-start-column="16" selection-end-line="6" selection-end-column="16" />
           <folding>
-            <element signature="e#70#845#0" expanded="false" />
-            <element signature="e#847#995#0" expanded="false" />
-            <element signature="e#997#1075#0" expanded="false" />
-            <element signature="e#1077#1144#0" expanded="false" />
-            <element signature="e#1146#1355#0" expanded="false" />
-            <element signature="e#1357#1414#0" expanded="false" />
-            <element signature="e#1416#1488#0" expanded="false" />
-            <element signature="e#1490#1553#0" expanded="false" />
-            <element signature="e#1555#1627#0" expanded="false" />
-            <element signature="e#1629#1692#0" expanded="false" />
+            <element signature="e#305#333#0" expanded="false" />
+            <element signature="e#335#371#0" expanded="false" />
+            <element signature="e#615#678#0" expanded="false" />
+            <element signature="e#680#733#0" expanded="false" />
+            <element signature="e#735#782#0" expanded="false" />
+            <element signature="e#784#833#0" expanded="false" />
+            <element signature="e#835#895#0" expanded="false" />
+            <element signature="e#897#944#0" expanded="false" />
+            <element signature="e#946#1004#0" expanded="false" />
+            <element signature="e#1006#1059#0" expanded="false" />
+            <element signature="e#1061#1127#0" expanded="false" />
+            <element signature="e#1129#1184#0" expanded="false" />
+            <element signature="e#1186#1250#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/windowing/winda_box.h">
+    <entry file="file://$PROJECT_DIR$/main.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="337">
-          <caret line="82" column="14" lean-forward="true" selection-start-line="82" selection-start-column="14" selection-end-line="82" selection-end-column="14" />
+        <state relative-caret-position="424">
+          <caret line="40" column="0" lean-forward="false" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#21#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/windowing/box_of_sprite.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="22" lean-forward="false" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/windowing/boxxer.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="615">
+          <caret line="41" column="21" lean-forward="true" selection-start-line="41" selection-start-column="21" selection-end-line="41" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/windowing/box_of_box.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1020">
+          <caret line="68" column="27" lean-forward="true" selection-start-line="68" selection-start-column="27" selection-end-line="68" selection-end-column="27" />
+          <folding>
+            <element signature="e#1456#1547#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/windowing/box_of_text.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="166">
+          <caret line="31" column="0" lean-forward="true" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
+          <folding>
+            <element signature="e#419#492#0" expanded="false" />
+            <element signature="e#494#556#0" expanded="false" />
+            <element signature="e#812#865#0" expanded="false" />
+            <element signature="e#867#934#0" expanded="false" />
+            <element signature="e#936#994#0" expanded="false" />
+            <element signature="e#996#1063#0" expanded="false" />
+            <element signature="e#1065#1123#0" expanded="false" />
+            <element signature="e#1207#1273#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/windowing/winda.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="616">
+          <caret line="44" column="21" lean-forward="false" selection-start-line="44" selection-start-column="21" selection-end-line="44" selection-end-column="21" />
+          <folding>
+            <element signature="e#63#77#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/windowing/base_box.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="16">
+          <caret line="109" column="21" lean-forward="false" selection-start-line="109" selection-start-column="21" selection-end-line="109" selection-end-column="21" />
           <folding>
             <element signature="e#61#82#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/windowing/winda_box_of_box.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="23" column="22" lean-forward="true" selection-start-line="23" selection-start-column="22" selection-end-line="23" selection-end-column="22" />
-          <folding>
-            <element signature="e#646#748#0" expanded="false" />
+            <element signature="e#510#1598#1" expanded="false" />
+            <element signature="e#1772#2484#1" expanded="false" />
+            <element signature="e#3195#3332#1" expanded="false" />
           </folding>
         </state>
       </provider>

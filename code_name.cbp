@@ -8,38 +8,38 @@
 		<Option virtualFolders="CMake Files\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="/users/gephery/github/code-name"/>
+				<Option working_dir="/Users/gephery/github/code-name"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/users/gephery/github/code-name/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/users/gephery/github/code-name/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/users/gephery/github/code-name/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/users/gephery/github/code-name/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/gephery/github/code-name/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/gephery/github/code-name/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/gephery/github/code-name/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/gephery/github/code-name/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
-				<Option working_dir="/users/gephery/github/code-name"/>
+				<Option working_dir="/Users/gephery/github/code-name"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/users/gephery/github/code-name/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/users/gephery/github/code-name/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/users/gephery/github/code-name/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/users/gephery/github/code-name/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/gephery/github/code-name/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/gephery/github/code-name/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/gephery/github/code-name/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/gephery/github/code-name/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="edit_cache">
-				<Option working_dir="/users/gephery/github/code-name"/>
+				<Option working_dir="/Users/gephery/github/code-name"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/users/gephery/github/code-name/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/users/gephery/github/code-name/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/users/gephery/github/code-name/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/users/gephery/github/code-name/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/gephery/github/code-name/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/gephery/github/code-name/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/gephery/github/code-name/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/gephery/github/code-name/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="code_name">
-				<Option output="/users/gephery/github/code-name/build/code_name" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/users/gephery/github/code-name/build"/>
+				<Option output="/Users/gephery/github/code-name/build/code_name" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/gephery/github/code-name/build"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -53,15 +53,15 @@
 					<Add directory="/Library/Frameworks"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/users/gephery/github/code-name/Makefile&quot;  VERBOSE=1 code_name"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/users/gephery/github/code-name/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/users/gephery/github/code-name/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/users/gephery/github/code-name/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/gephery/github/code-name/Makefile&quot;  VERBOSE=1 code_name"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/gephery/github/code-name/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/gephery/github/code-name/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/gephery/github/code-name/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="code_name/fast">
-				<Option output="/users/gephery/github/code-name/build/code_name" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/users/gephery/github/code-name/build"/>
+				<Option output="/Users/gephery/github/code-name/build/code_name" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/gephery/github/code-name/build"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -75,71 +75,68 @@
 					<Add directory="/Library/Frameworks"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/users/gephery/github/code-name/Makefile&quot;  VERBOSE=1 code_name/fast"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/users/gephery/github/code-name/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/users/gephery/github/code-name/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/users/gephery/github/code-name/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/gephery/github/code-name/Makefile&quot;  VERBOSE=1 code_name/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/gephery/github/code-name/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/gephery/github/code-name/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/gephery/github/code-name/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/users/gephery/github/code-name/include/model_data.h">
+		<Unit filename="/Users/gephery/github/code-name/include/model_data.h">
 			<Option target="code_name"/>
 		</Unit>
-		<Unit filename="/users/gephery/github/code-name/main.cpp">
+		<Unit filename="/Users/gephery/github/code-name/main.cpp">
 			<Option target="code_name"/>
 		</Unit>
-		<Unit filename="/users/gephery/github/code-name/src/graphics/sprite.cpp">
+		<Unit filename="/Users/gephery/github/code-name/src/items/item.cpp">
 			<Option target="code_name"/>
 		</Unit>
-		<Unit filename="/users/gephery/github/code-name/src/graphics/sprite.h">
+		<Unit filename="/Users/gephery/github/code-name/src/items/item.h">
 			<Option target="code_name"/>
 		</Unit>
-		<Unit filename="/users/gephery/github/code-name/src/graphics/sprite_back.cpp">
+		<Unit filename="/Users/gephery/github/code-name/src/mob/mob.cpp">
 			<Option target="code_name"/>
 		</Unit>
-		<Unit filename="/users/gephery/github/code-name/src/items/item.cpp">
+		<Unit filename="/Users/gephery/github/code-name/src/mob/mob.h">
 			<Option target="code_name"/>
 		</Unit>
-		<Unit filename="/users/gephery/github/code-name/src/items/item.h">
+		<Unit filename="/Users/gephery/github/code-name/src/mob/mob_manager.cpp">
 			<Option target="code_name"/>
 		</Unit>
-		<Unit filename="/users/gephery/github/code-name/src/mob/mob.cpp">
+		<Unit filename="/Users/gephery/github/code-name/src/mob/mob_manager.h">
 			<Option target="code_name"/>
 		</Unit>
-		<Unit filename="/users/gephery/github/code-name/src/mob/mob.h">
+		<Unit filename="/Users/gephery/github/code-name/src/windowing/base_box.cpp">
 			<Option target="code_name"/>
 		</Unit>
-		<Unit filename="/users/gephery/github/code-name/src/mob/mob_manager.cpp">
+		<Unit filename="/Users/gephery/github/code-name/src/windowing/base_box.h">
 			<Option target="code_name"/>
 		</Unit>
-		<Unit filename="/users/gephery/github/code-name/src/mob/mob_manager.h">
+		<Unit filename="/Users/gephery/github/code-name/src/windowing/box_of_box.cpp">
 			<Option target="code_name"/>
 		</Unit>
-		<Unit filename="/users/gephery/github/code-name/src/windowing/fonter.cpp">
+		<Unit filename="/Users/gephery/github/code-name/src/windowing/box_of_sprite.cpp">
 			<Option target="code_name"/>
 		</Unit>
-		<Unit filename="/users/gephery/github/code-name/src/windowing/fonter.h">
+		<Unit filename="/Users/gephery/github/code-name/src/windowing/box_of_text.cpp">
 			<Option target="code_name"/>
 		</Unit>
-		<Unit filename="/users/gephery/github/code-name/src/windowing/game_winda.cpp">
+		<Unit filename="/Users/gephery/github/code-name/src/windowing/boxxer.cpp">
 			<Option target="code_name"/>
 		</Unit>
-		<Unit filename="/users/gephery/github/code-name/src/windowing/game_winda.h">
+		<Unit filename="/Users/gephery/github/code-name/src/windowing/fonter.cpp">
 			<Option target="code_name"/>
 		</Unit>
-		<Unit filename="/users/gephery/github/code-name/src/windowing/winda_box.cpp">
+		<Unit filename="/Users/gephery/github/code-name/src/windowing/fonter.h">
 			<Option target="code_name"/>
 		</Unit>
-		<Unit filename="/users/gephery/github/code-name/src/windowing/winda_box.h">
+		<Unit filename="/Users/gephery/github/code-name/src/windowing/texture_manager.cpp">
 			<Option target="code_name"/>
 		</Unit>
-		<Unit filename="/users/gephery/github/code-name/src/windowing/winda_box_of_box.cpp">
+		<Unit filename="/Users/gephery/github/code-name/src/windowing/winda.cpp">
 			<Option target="code_name"/>
 		</Unit>
-		<Unit filename="/users/gephery/github/code-name/src/windowing/winda_box_of_sprite.cpp">
-			<Option target="code_name"/>
-		</Unit>
-		<Unit filename="/users/gephery/github/code-name/src/windowing/winda_box_of_text.cpp">
+		<Unit filename="/Users/gephery/github/code-name/src/windowing/winda.h">
 			<Option target="code_name"/>
 		</Unit>
 		<Unit filename="/Users/gephery/github/code-name/CMakeLists.txt">

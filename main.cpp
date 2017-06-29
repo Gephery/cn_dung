@@ -1,30 +1,44 @@
 #include <SDL2/SDL.h>
-#include <SDL2_image/SDL_image.h>
-#include "src/graphics/sprite.h"
-#include "src/windowing/game_winda.h"
+#include "src/windowing/winda.h"
+#include "src/windowing/base_box.h"
 
 int main(void)
 {
 
   // Testing zone
-  bool yea = GameWinda::Init();
+  bool yea = Winda::Init();
+  bool yea_ttf = Fonter::LoadFonts();
   //Testing ZONE---------------------------------------
-  SpritePiece* piece = new SpritePiece((char *) "../assets/laz.png", GameWinda::GetSurface()->format);
-  SDL_Surface* img = piece->GetImg();
+  SDL_Rect box;
+  box.x = 0;
+  box.y = 0;
+  box.w = 100;
+  box.h = 100;
 
-  SDL_Rect rect;
-  rect.x = 0;
-  rect.y = 0;
-  rect.h = img->h;
-  rect.w = img->w;
-  SDL_Surface* temp_win = SDL_GetWindowSurface(GameWinda::GetWindow());
-  Uint32 color = SDL_MapRGB(GameWinda::GetSurface()->format, 255, 255, 255);
-  //SDL_FillRect(img, NULL, color);
-  SDL_BlitSurface(img, NULL, temp_win, &rect);
-  SDL_UpdateWindowSurface(GameWinda::GetWindow());
+  SDL_Rect box_two;
+  box_two.x = 0;
+  box_two.y = 0;
 
+  SDL_Point cen;
+  cen.x = 0;
+  cen.y = 0;
+  SDL_Color text_color;
+  text_color.r = 255;
+  text_color.g = 0;
+  text_color.b = 0;
+  text_color.a = 255;
+
+  std::string pig = "This little piggy";
+  BaseBox* piece_two = new BoxOfText(&cen, &pig, &text_color, FontSize::FIFTY);
+  BaseBox* piece = new BoxOfSprite("../assets/laz.png", &cen);
+  Layer* main_box = new Layer(&box, &cen, 0);
+  Boxxer::RegisterBox(main_box);
+  main_box->AddWindaBox(piece_two);
+  main_box->AddWindaBox(piece);
   //End testing Zone------------------------------------
-  if (yea) {
+  if (yea)
+  {
+
     // Way the game can stop
     // NOTE: Game may not close as fast as window, may do background stuff first.
     bool running = true;
@@ -32,14 +46,13 @@ int main(void)
 
     while (running)
     {
-      // Only run if there is an event waiting to be checked.
-      // TODO add more event handling for user input
+      Boxxer::DrawFullNClean();
       while (SDL_PollEvent(&event))
       {
         if (event.type == SDL_QUIT)
         {
           running = false;
-          GameWinda::Quit();
+          Winda::Quit();
           break;
         }
       }
