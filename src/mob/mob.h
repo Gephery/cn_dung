@@ -13,6 +13,7 @@
 #include "../items/item.h"
 #include "../flat_buffers/sprite_generated.h"
 #include "../windowing/base_box.h"
+#include "../windowing/box_types/sprite_area.h"
 
 class Action
 {
@@ -100,8 +101,6 @@ class Mob
     int sprint_speed_;
     int jump_height_;
     int evil_;
-    int x_;
-    int y_;
     int level_;
 
     std::set<unsigned int>* abilities_;

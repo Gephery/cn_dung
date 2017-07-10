@@ -4,26 +4,7 @@
 #include <string>
 #include <SDL2/SDL.h>
 #include <SDL2_ttf/SDL_ttf.h>
-
-/**
-  * When referencing what font size you want, use these.
-  */
-enum FontSize {
-  FOUR = 0,
-  TEN = 1,
-  EIGHTEEN = 2,
-  TWENTY = 3,
-  FIFTY = 4
-};
-
-/**
-  * When referencing what font type, use these.
-  */
-enum FontCode
-{
-  MONO = 0,
-  MONO_BOLD = 1
-};
+#include "enums_fonter.h"
 
 /**
   * Used by Winda to display and keep track of font types.

@@ -88,6 +88,42 @@
 		<Unit filename="/Users/gephery/github/code-name/main.cpp">
 			<Option target="code_name"/>
 		</Unit>
+		<Unit filename="/Users/gephery/github/code-name/src/events/built_in_handlers/default_handlers.cpp">
+			<Option target="code_name"/>
+		</Unit>
+		<Unit filename="/Users/gephery/github/code-name/src/events/built_in_handlers/default_handlers.h">
+			<Option target="code_name"/>
+		</Unit>
+		<Unit filename="/Users/gephery/github/code-name/src/events/built_in_packets/click_packet.cpp">
+			<Option target="code_name"/>
+		</Unit>
+		<Unit filename="/Users/gephery/github/code-name/src/events/built_in_packets/click_packet.h">
+			<Option target="code_name"/>
+		</Unit>
+		<Unit filename="/Users/gephery/github/code-name/src/events/handy.h">
+			<Option target="code_name"/>
+		</Unit>
+		<Unit filename="/Users/gephery/github/code-name/src/events/handy_handler.cpp">
+			<Option target="code_name"/>
+		</Unit>
+		<Unit filename="/Users/gephery/github/code-name/src/events/handy_handler.h">
+			<Option target="code_name"/>
+		</Unit>
+		<Unit filename="/Users/gephery/github/code-name/src/events/info_packet.cpp">
+			<Option target="code_name"/>
+		</Unit>
+		<Unit filename="/Users/gephery/github/code-name/src/events/info_packet.h">
+			<Option target="code_name"/>
+		</Unit>
+		<Unit filename="/Users/gephery/github/code-name/src/events/main_info_manager.cpp">
+			<Option target="code_name"/>
+		</Unit>
+		<Unit filename="/Users/gephery/github/code-name/src/events/main_info_manager.h">
+			<Option target="code_name"/>
+		</Unit>
+		<Unit filename="/Users/gephery/github/code-name/src/flat_buffers/main.cpp">
+			<Option target="code_name"/>
+		</Unit>
 		<Unit filename="/Users/gephery/github/code-name/src/items/item.cpp">
 			<Option target="code_name"/>
 		</Unit>
@@ -112,16 +148,40 @@
 		<Unit filename="/Users/gephery/github/code-name/src/windowing/base_box.h">
 			<Option target="code_name"/>
 		</Unit>
-		<Unit filename="/Users/gephery/github/code-name/src/windowing/box_of_box.cpp">
+		<Unit filename="/Users/gephery/github/code-name/src/windowing/box_types.h">
 			<Option target="code_name"/>
 		</Unit>
-		<Unit filename="/Users/gephery/github/code-name/src/windowing/box_of_sprite.cpp">
+		<Unit filename="/Users/gephery/github/code-name/src/windowing/box_types/box_of_text.cpp">
 			<Option target="code_name"/>
 		</Unit>
-		<Unit filename="/Users/gephery/github/code-name/src/windowing/box_of_text.cpp">
+		<Unit filename="/Users/gephery/github/code-name/src/windowing/box_types/box_of_text.h">
+			<Option target="code_name"/>
+		</Unit>
+		<Unit filename="/Users/gephery/github/code-name/src/windowing/box_types/button.cpp">
+			<Option target="code_name"/>
+		</Unit>
+		<Unit filename="/Users/gephery/github/code-name/src/windowing/box_types/button.h">
+			<Option target="code_name"/>
+		</Unit>
+		<Unit filename="/Users/gephery/github/code-name/src/windowing/box_types/layer.cpp">
+			<Option target="code_name"/>
+		</Unit>
+		<Unit filename="/Users/gephery/github/code-name/src/windowing/box_types/layer.h">
+			<Option target="code_name"/>
+		</Unit>
+		<Unit filename="/Users/gephery/github/code-name/src/windowing/box_types/sprite_area.cpp">
+			<Option target="code_name"/>
+		</Unit>
+		<Unit filename="/Users/gephery/github/code-name/src/windowing/box_types/sprite_area.h">
 			<Option target="code_name"/>
 		</Unit>
 		<Unit filename="/Users/gephery/github/code-name/src/windowing/boxxer.cpp">
+			<Option target="code_name"/>
+		</Unit>
+		<Unit filename="/Users/gephery/github/code-name/src/windowing/boxxer.h">
+			<Option target="code_name"/>
+		</Unit>
+		<Unit filename="/Users/gephery/github/code-name/src/windowing/enums_fonter.h">
 			<Option target="code_name"/>
 		</Unit>
 		<Unit filename="/Users/gephery/github/code-name/src/windowing/fonter.cpp">
@@ -131,6 +191,9 @@
 			<Option target="code_name"/>
 		</Unit>
 		<Unit filename="/Users/gephery/github/code-name/src/windowing/texture_manager.cpp">
+			<Option target="code_name"/>
+		</Unit>
+		<Unit filename="/Users/gephery/github/code-name/src/windowing/texture_manager.h">
 			<Option target="code_name"/>
 		</Unit>
 		<Unit filename="/Users/gephery/github/code-name/src/windowing/winda.cpp">

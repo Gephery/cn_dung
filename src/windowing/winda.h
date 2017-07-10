@@ -1,12 +1,7 @@
 #ifndef CODE_NAME_GAME_WINDA_H
 #define CODE_NAME_GAME_WINDA_H
 
-#include <map>
-#include <SDL2/SDL.h>
-#include <SDL2_image/SDL_image.h>
-#include <SDL2_ttf/SDL_ttf.h>
-#include "fonter.h"
-#include "base_box.h"
+class BaseBox;
 
 /**
   * Acts as a single contact to access any windowing part.
@@ -24,28 +19,28 @@ class Winda
     static void Quit();
 
     /** Get the window but do not change the pointer. */
-    static SDL_Window*  GetWindow();
+    static SDL_Window *GetWindow();
 
     /** Get the surface but do not change the pointer. */
-    static SDL_Renderer*  GetRenderer() { return renderer_; }
+    static SDL_Renderer *GetRenderer() { return renderer_; }
 
     static int GetWindaWidth();
+
     static int GetWindaHeight();
+
+    static BaseBox *GetSelectedBox();
+
+    static void SetSelectedBox(BaseBox *box);
+
+    static bool keyboard_focused_;
+    static bool mouse_focused_;
+    static bool minimized_;
   protected:
-    static SDL_Window* main_window_; // Seen as the thing that holds everything.
-    static SDL_Renderer* renderer_;
-    static int* screen_width_;
-    static int* screen_height_;
+    static SDL_Window *main_window_; // Seen as the thing that holds everything.
+    static SDL_Renderer *renderer_;
+    static int *screen_width_;
+    static int *screen_height_;
+    static BaseBox *selected_;
 };
-
-class TextureManager
-{
-public:
-  static SDL_Texture* LoadAsset(std::string path, SDL_Rect* rect);
-  static void Quit();
-private:
-  static std::map<std::string, SDL_Texture*> assets_; // For closing of all easily.
-};
-
 
 #endif //CODE_NAME_GAME_WINDA_H

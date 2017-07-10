@@ -2,6 +2,8 @@
 // Created by Max Grucella on 6/25/17.
 //
 
+#include <SDL2_image/SDL_image.h>
+#include "texture_manager.h"
 #include "winda.h"
 
 std::map<std::string, SDL_Texture*> TextureManager::assets_;
@@ -12,7 +14,7 @@ SDL_Texture* TextureManager::LoadAsset(std::string path, SDL_Rect* rect)
   if (possible == nullptr) // Check if already added.
   {
     SDL_Texture *fin_texture;
-    SDL_Surface *loading_img = IMG_Load(path.c_str()); // Load in img, not formatted.
+    SDL_Surface *loading_img = IMG_Load(path.c_str()); // main in img, not formatted.
     bool success = loading_img != NULL;
 
     if (success) // Formatting check.

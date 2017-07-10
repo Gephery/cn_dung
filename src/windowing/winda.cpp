@@ -1,16 +1,22 @@
+
+#include <SDL2/SDL.h>
+#include <SDL2_image/SDL_image.h>
+#include "fonter.h"
+#include "texture_manager.h"
+#include "base_box.h"
 #include "winda.h"
 
 const char WINDA_NAME[10] = "Game Dung";
 
-SDL_Window* Winda::main_window_;
-SDL_Renderer* Winda::renderer_;
-int* Winda::screen_width_;
-int* Winda::screen_height_;
+SDL_Window *Winda::main_window_;
+SDL_Renderer *Winda::renderer_;
+int *Winda::screen_width_;
+int *Winda::screen_height_;
+BaseBox *Winda::selected_;
 
-SDL_Window*  Winda::GetWindow() { return main_window_; }
+SDL_Window *Winda::GetWindow() { return main_window_; }
 
-bool Winda::Init()
-{
+bool Winda::Init() {
   bool success = SDL_Init(SDL_INIT_EVERYTHING) == 0;
 
   if (success) {
@@ -24,8 +30,7 @@ bool Winda::Init()
     success = Winda::main_window_ != NULL; // Check if window creation a success
 
     // SDL libs inits
-    if (success)
-    {
+    if (success) {
       SDL_GetWindowSize(main_window_, screen_width_, screen_height_); // Sets up easy access w and h.
 
       renderer_ = SDL_CreateRenderer(main_window_, -1, SDL_RENDERER_ACCELERATED);
@@ -37,12 +42,11 @@ bool Winda::Init()
       printf("Error in starting SDL: %s ", SDL_GetError());
 
     // SDL_image init
-    if (success)
-    {
+    if (success) {
       int img_flags = IMG_INIT_PNG;
-      bool img_init_succ = (IMG_Init(img_flags)&img_flags) == img_flags;
+      bool img_init_succ = (IMG_Init(img_flags) & img_flags) == img_flags;
       if (!img_init_succ)
-          printf("Error in starting SDL_IMG: %s", IMG_GetError());
+        printf("Error in starting SDL_IMG: %s", IMG_GetError());
       success &= img_init_succ;
     }
 
@@ -54,8 +58,7 @@ bool Winda::Init()
   return success;
 }
 
-void Winda::Quit()
-{
+void Winda::Quit() {
 
   TextureManager::Quit();
 
@@ -68,12 +71,18 @@ void Winda::Quit()
   SDL_Quit();
 }
 
-int Winda::GetWindaWidth()
-{
+int Winda::GetWindaWidth() {
   return *screen_width_;
 }
 
-int Winda::GetWindaHeight()
-{
+int Winda::GetWindaHeight() {
   return *screen_height_;
+}
+
+BaseBox *Winda::GetSelectedBox() {
+  return selected_;
+}
+
+void Winda::SetSelectedBox(BaseBox *box) {
+  selected_ = box;
 }

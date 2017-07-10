@@ -2,7 +2,8 @@
 // Created by Max Grucella on 6/23/17.
 //
 
-#include "base_box.h"
+#include "sprite_area.h"
+#include "../texture_manager.h"
 
 BoxOfSprite::BoxOfSprite(std::string path, SDL_Point* upper_left) : BaseBox(upper_left)
 {

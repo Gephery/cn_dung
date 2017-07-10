@@ -14176,7 +14176,7 @@
 	  FreeMonoBold.sfd,
 	  FreeMonoOblique.sfd,
 	  FreeSerifBold.sfd,
-	  FreeMonoBoldOblique.sfd: Changed "Family Name"
+	  FreeMonoBoldOblique.sfd: Changed "Family GetName"
 	  from Free to FreeSerif, FreeSans and FreeMono, as appropriate.
 	  Changed Font Modifiers from MonoBold etc. to Bold, Italic,
 	  Oblique, BoldOblique and BoldItalic.

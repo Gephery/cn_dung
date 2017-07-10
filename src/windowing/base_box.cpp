@@ -1,7 +1,9 @@
 #include "base_box.h"
+#include "winda.h"
 
 BaseBox::BaseBox(SDL_Point* upper_left)
 {
+  type_ = BASE_BOX;
   // Safety
   SDL_Point* cen = NULL;
   center_ = cen;
@@ -13,6 +15,7 @@ BaseBox::BaseBox(SDL_Point* upper_left)
   clip_->x = upper_left->x;
   clip_->y = upper_left->y;
 
+  draw_ = true;
   angle_ = 0.0;
   flip_ = SDL_FLIP_NONE;
 }
@@ -30,7 +33,7 @@ BaseBox::~BaseBox()
 void BaseBox::Draw()
 {
   // Draw texture if there is one
-  if (img_ != NULL)
+  if (img_ != NULL && draw_)
   {
     SDL_RenderCopyEx(Winda::GetRenderer(), img_, rect_, clip_, angle_,
                      (const SDL_Point *) center_, (const SDL_RendererFlip) flip_);
@@ -97,7 +100,7 @@ void BaseBox::SetClip(SDL_Rect* clip)
   clip_ = clip;
 }
 
-void BaseBox::SetY(int new_z)
+void BaseBox::UnsafelySetY(int new_z)
 {
   clip_->y = new_z;
 }
@@ -115,5 +118,22 @@ void BaseBox::SetX(int new_x)
 int BaseBox::GetX()
 {
   return clip_->x;
+}
+
+bool BaseBox::IsPointInBox(int x, int y)
+{
+  return (x >= rect_->x && x <= (rect_->x + rect_->w) &&
+      y >= rect_->y && y <= (rect_->y + rect_->h));
+}
+
+int BaseBox::GetHeight()
+{
+  return clip_->h;
+}
+
+int BaseBox::GetWidth()
+{
+
+  return clip_->w;
 }
 

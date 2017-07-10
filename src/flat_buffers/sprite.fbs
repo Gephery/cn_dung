@@ -4,7 +4,6 @@ namespace dung.sprite;
 table SpriPart {
   path:string;
   part_code:uint;
-  tile_size:byte = 16; // In pixels
   actions:[ActionPacket];
   img_code:short = 1; // Not in use at the moment
 
@@ -24,6 +23,7 @@ table SpriPart {
 }
 
 struct ActionPacket {
+  tile_size:byte = 16; // In pixels
   tiles_w:short;
   tiles_h:short;
   action_code:short; // Local to img and part
