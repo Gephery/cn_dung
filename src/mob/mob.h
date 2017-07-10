@@ -8,62 +8,120 @@
 
 #include <list>
 #include <SDL2/SDL_surface.h>
+#include <SDL2_image/SDL_image.h>
+#include <map>
 #include "../items/item.h"
-#include "../util/m_uuid.h"
+#include "../flat_buffers/sprite_generated.h"
+#include "../windowing/base_box.h"
+#include "../windowing/box_types/sprite_area.h"
+
+class Action
+{
+public:
+  Action(dung::sprite::ActionPacket action_unpacked);
+  Action(SDL_Rect frames, short action_code, short action_lock, short action_speed);
+private:
+  std::list<SDL_Rect> frames_;
+  short action_code_;
+  short action_lock_;
+  short action_speed_;
+};
+
+class MobberPart
+{
+public:
+  MobberPart(dung::sprite::SpriPart);
+  MobberPart(unsigned int part_code, SDL_Texture* img_, std::map<short, Action*> actions,
+             int health_contra, int armour_contra_, int damage_contra, int magic_contra,
+             int movement_contra_, int sprint_contra, int jump_contra, int evil_contra,
+             int relative_x, int relative_y, unsigned int abilities[]);
+private:
+  unsigned int part_code_;
+  SDL_Texture* img_;
+  std::map<short, Action*> actions_;
+
+  int health_contra_;
+  int armour_contra_;
+  int damage_contra_;
+  int magic_contra_;
+  int movement_contra_;
+  int sprint_contra_;
+  int jump_contra_;
+  int evil_contra_;
+
+  int relative_x_;
+  int relative_y_;
+
+  std::list<unsigned int> abilities_;
+
+};
 
 class Mob
 {
-public:
+  public:
     // Will return the reference to that slot, but if out of
     // bounds will and if empty will return null.
 
-    int GetCurrentHealth() { return *this->health_current_; }
-    int GetMaxHealth() { return *this->health_max_; }
+    int GetCurrentHealth();
+    int GetMaxHealth();
     void AddHealth(const int health);
-    void SetMaxHealth(const int new_health) { *(this->health_max_) = new_health; }
+    void SetMaxHealth(const int new_health);
+    void TakeHealth(const int damage);
 
-    int GetCurrentMagic() { return *this->magic_current_; }
-    int GetMaxMagic() { return *this->magic_max_; }
+    // Magic related things
+    int GetCurrentMagic();
+    int GetMaxMagic();
     void AddMagic(const int new_magic);
-    void SetMaxMagic(const int max) { *(this->magic_max_) = max; }
+    void SetMaxMagic(const int max);
+    void takeMagic(const int used_magic);
 
-    int GetMovementSpeed() { return *this->movement_speed_; }
-    void SetMovementSpeed(const int speed) { *(this->movement_speed_) = speed; }
+    int GetMovementSpeed();
+    void SetMovementSpeed(const int speed);
 
-    int GetLevel() { return *this->level_; }
-    void SetLevel(const int level) { *(this->level_) = level; }
+    int GetLevel();
+    void IncrementLevel();
+    void SetLevel(const int level);
 
     int GetDamage(const int amount);
-    int GetHealth(const int amount) { return *(health_current_); }
-    bool IsDead() { return health_current_ == 0; }
+    int GetHealth(const int amount);
+    bool IsDead();
 
-    std::list<MUid>** GetMobTypeFriends() { return &friends_; }
-    std::list<MUid>** GetMobTypeEnemies() { return &enemies_; }
+    std::list<unsigned short>* GetMobTypeFriends();
+    std::list<unsigned short>* GetMobTypeEnemies();
+  private:
+    std::string name;
+    unsigned int mob_code;
+    int health_max_;
+    int health_current_;
+    int damage_;
+    int armour_;
+    int magic_max_;
+    int magic_current_;
+    int movement_speed_;
+    int sprint_speed_;
+    int jump_height_;
+    int evil_;
+    int level_;
 
-    class Inventory
-    {
-    public:
+    std::set<unsigned int>* abilities_;
+    std::list<MobberPart*> parts_;
 
-    private:
-        std::list<SDL_Surface>* model_;
+    BoxOfSprite* draw_place_;
 
-    };
+    // TODO add inventory
+};
 
 
-private:
-    int* health_max_;
-    int* health_current_;
-    int* magic_max_;
-    int* magic_current_;
-    int* movement_speed_;
-    int* level_;
-    std::list<MUid>* friends_;
-    std::list<MUid>* enemies_;
-    std::list<SDL_Surface>* model_;
+class MobManager
+{
+  public:
+    static bool Load();
+    static Mob* CreateMob(unsigned int mob_code);
 
-    // Inventory is a set size and does not change but empty spaces are tracked.
-    Inventory* inventory_;
-    //TODO add ability pouch
+    static bool SaveMob(Mob* mob);
+  private:
+    static bool LoadMobParts();
+    static bool LoadMobs();
 };
 
 

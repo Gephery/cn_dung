@@ -1,3 +1,0 @@
-/Users/gephery/CLionProjects/code-name/cmake-build-debug/CMakeFiles/edit_cache.dir
-/Users/gephery/CLionProjects/code-name/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/Users/gephery/CLionProjects/code-name/cmake-build-debug/CMakeFiles/code_name.dir
