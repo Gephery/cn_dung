@@ -50,6 +50,12 @@ class BaseBox
     bool draw_;
     int GetHeight();
     int GetWidth();
+    void SetRecHeight(int height);
+    void SetRecWidth(int width);
+    void SetRecX(int x);
+    void SetRecY(int y);
+    void SetClipWidth(int width);
+    void SetClipHeight(int height);
   protected:
     BoxTypes type_; /** Use to determine which Winda Box it is. */
     SDL_Rect* rect_; /** The area the box tries to occupy */

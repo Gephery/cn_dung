@@ -3,6 +3,7 @@
 //
 
 #include "box_of_text.h"
+
 #include "../winda.h"
 
 BoxOfText::BoxOfText(SDL_Point* upper_left, std::string* text, SDL_Color* text_color,

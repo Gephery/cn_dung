@@ -5,123 +5,62 @@
 #ifndef CODE_NAME_MOB_H
 #define CODE_NAME_MOB_H
 
-
+#include <string>
+#include <SDL2/SDL_rect.h>
 #include <list>
-#include <SDL2/SDL_surface.h>
-#include <SDL2_image/SDL_image.h>
-#include <map>
-#include "../items/item.h"
-#include "../flat_buffers/sprite_generated.h"
-#include "../windowing/base_box.h"
-#include "../windowing/box_types/sprite_area.h"
+#include <SDL2/SDL_system.h>
+#include "../util/reallocation_list.h"
 
-class Action
-{
-public:
-  Action(dung::sprite::ActionPacket action_unpacked);
-  Action(SDL_Rect frames, short action_code, short action_lock, short action_speed);
-private:
-  std::list<SDL_Rect> frames_;
-  short action_code_;
-  short action_lock_;
-  short action_speed_;
-};
-
-class MobberPart
-{
-public:
-  MobberPart(dung::sprite::SpriPart);
-  MobberPart(unsigned int part_code, SDL_Texture* img_, std::map<short, Action*> actions,
-             int health_contra, int armour_contra_, int damage_contra, int magic_contra,
-             int movement_contra_, int sprint_contra, int jump_contra, int evil_contra,
-             int relative_x, int relative_y, unsigned int abilities[]);
-private:
-  unsigned int part_code_;
-  SDL_Texture* img_;
-  std::map<short, Action*> actions_;
-
-  int health_contra_;
-  int armour_contra_;
-  int damage_contra_;
-  int magic_contra_;
-  int movement_contra_;
-  int sprint_contra_;
-  int jump_contra_;
-  int evil_contra_;
-
-  int relative_x_;
-  int relative_y_;
-
-  std::list<unsigned int> abilities_;
-
-};
+class RepeatEvent;
+class BoxOfSprite;
+class BoxOfText;
+class Layer;
+class POfContact;
 
 class Mob
 {
   public:
-    // Will return the reference to that slot, but if out of
-    // bounds will and if empty will return null.
+    Mob(std::string name, Layer* layer, SDL_Point* top_left, std::string asset_path);
+    ~Mob();
+    void Move(int current_frame);
 
-    int GetCurrentHealth();
-    int GetMaxHealth();
-    void AddHealth(const int health);
-    void SetMaxHealth(const int new_health);
-    void TakeHealth(const int damage);
+    int GetDx();
+    int GetDy();
+    void SetDx(int dx);
+    void SetDy(int dy);
 
-    // Magic related things
-    int GetCurrentMagic();
-    int GetMaxMagic();
-    void AddMagic(const int new_magic);
-    void SetMaxMagic(const int max);
-    void takeMagic(const int used_magic);
+    int IsAnimating();
+    void SetAnimating(RepeatEvent* event);
+    void SetOrientation(int animation_code);
+    void StopAnimation();
 
-    int GetMovementSpeed();
-    void SetMovementSpeed(const int speed);
+    int GetX();
+    int GetY();
+    int GetHeight();
+    int GetWidth();
 
-    int GetLevel();
-    void IncrementLevel();
-    void SetLevel(const int level);
+    SDL_Keysym GetLastBPressed();
+    void SetBPressed(SDL_Keysym butt);
 
-    int GetDamage(const int amount);
-    int GetHealth(const int amount);
-    bool IsDead();
+    void UpdatePOCS();
+    std::list<POfContact*> GetPOfContacts();
 
-    std::list<unsigned short>* GetMobTypeFriends();
-    std::list<unsigned short>* GetMobTypeEnemies();
-  private:
-    std::string name;
-    unsigned int mob_code;
-    int health_max_;
-    int health_current_;
-    int damage_;
-    int armour_;
-    int magic_max_;
-    int magic_current_;
-    int movement_speed_;
-    int sprint_speed_;
-    int jump_height_;
-    int evil_;
-    int level_;
+    void ChangeDrawRect(int current_frame);
+  protected:
 
-    std::set<unsigned int>* abilities_;
-    std::list<MobberPart*> parts_;
+    ReallocationList<int> pocs_;
+    Layer* owning_layer_;
+    int dx_;
+    int dy_;
+    BoxOfText* name_;
+    BoxOfSprite* draw_area_;
 
-    BoxOfSprite* draw_place_;
-
-    // TODO add inventory
-};
-
-
-class MobManager
-{
-  public:
-    static bool Load();
-    static Mob* CreateMob(unsigned int mob_code);
-
-    static bool SaveMob(Mob* mob);
-  private:
-    static bool LoadMobParts();
-    static bool LoadMobs();
+    RepeatEvent* current_motion_;
+    int mob_dynamic_id;
+    SDL_Keysym last_b_pressed_;
+    int motion_;
+    int orientation_;
+    bool cancel_mo_event_;
 };
 
 

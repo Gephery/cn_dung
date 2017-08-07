@@ -8,8 +8,8 @@
 #include <list>
 #include <map>
 #include "../base_box.h"
-#include "../../events/built_in_packets/click_packet.h"
 
+class ClickEvent;
 
 /**
   * Box of Box is a container type for fitting and clipping.

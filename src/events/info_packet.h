@@ -17,8 +17,6 @@ class InfoPacket
     int event_code_;
     bool fully_set; // Only throw events that have all fields set, this should be true when all are set.
   private:
-    // For more priority levels add list of set of handlers
-    std::list<std::function<bool(InfoPacket* info)>> handlers_;
 };
 
 

@@ -1,5 +1,7 @@
-#include <iostream>
+
 #include "fonter.h"
+
+#include <iostream>
 
 // NOTE: Font info for implementation only.
 // NOTE: FontSize -> FONT_SIZES & FontCode -> FONT_LOCATIONS

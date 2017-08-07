@@ -1,7 +1,10 @@
 #ifndef CODE_NAME_GAME_WINDA_H
 #define CODE_NAME_GAME_WINDA_H
 
+
+#include <SDL2/SDL.h>
 class BaseBox;
+class Mouse;
 
 /**
   * Acts as a single contact to access any windowing part.
@@ -31,6 +34,8 @@ class Winda
     static BaseBox *GetSelectedBox();
 
     static void SetSelectedBox(BaseBox *box);
+    static Mouse* GetPlayer();
+    static void SetPlayer(Mouse* player);
 
     static bool keyboard_focused_;
     static bool mouse_focused_;
@@ -41,6 +46,7 @@ class Winda
     static int *screen_width_;
     static int *screen_height_;
     static BaseBox *selected_;
+    static Mouse* player_;
 };
 
 #endif //CODE_NAME_GAME_WINDA_H

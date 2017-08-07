@@ -3,7 +3,6 @@
 //
 
 #include "button.h"
-#include "../base_box.h"
 
 Button::Button(SDL_Point *center, std::string *text, SDL_Rect size) : BaseBox(center)
 {

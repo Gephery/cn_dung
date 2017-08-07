@@ -1,22 +1,22 @@
 //
 // Created by Max Grucella on 6/26/17.
 //
-#include <list>
+#include "layer_manager.h"
+
 #include <iostream>
-#include "base_box.h"
-#include "boxxer.h"
 #include "winda.h"
 #include "../events/main_info_manager.h"
-#include "../events/handy.h"
+#include "box_types/layer.h"
+#include "../events/built_in_packets/click_packet.h"
 
-std::map<int, std::list<Layer*>> Boxxer::z_to_layers_;
+std::map<int, std::list<Layer*>> LayerManager::z_to_layers_;
 
-void Boxxer::RegisterBox(Layer* box)
+void LayerManager::RegisterBox(Layer* box)
 {
   z_to_layers_[box->GetZ()].push_back(box);
 }
 
-void Boxxer::Draw()
+void LayerManager::Draw()
 {
   for (auto it = z_to_layers_.begin(); it != z_to_layers_.end(); ++it)
   {
@@ -27,20 +27,20 @@ void Boxxer::Draw()
   }
 }
 
-void Boxxer::DrawFullNClean()
+void LayerManager::DrawFullNClean()
 {
   SDL_SetRenderDrawColor(Winda::GetRenderer(), 255, 255, 255, 255);
   SDL_RenderClear(Winda::GetRenderer());
-  Boxxer::Draw();
+  LayerManager::Draw();
   SDL_RenderPresent(Winda::GetRenderer());
 }
 
-void Boxxer::ChangeOfY(Layer* container, BaseBox *box, int new_y)
+void LayerManager::ChangeOfY(Layer* container, BaseBox *box, int new_y)
 {
   container->ChangeOfY(box, new_y);
 }
 
-void Boxxer::ChangeOfZ(Layer* layer, int new_z)
+void LayerManager::ChangeOfZ(Layer* layer, int new_z)
 {
   auto yer = z_to_layers_[layer->GetZ()];
   std::remove(yer.begin(), yer.end(), layer);
@@ -49,7 +49,7 @@ void Boxxer::ChangeOfZ(Layer* layer, int new_z)
   RegisterBox(layer);
 }
 
-void Boxxer::HuntClick(int x, int y) {
+void LayerManager::HuntClick(int x, int y) {
   ClickEvent* click = new ClickEvent();
   click->x = x;
   click->y = y;
@@ -60,6 +60,22 @@ void Boxxer::HuntClick(int x, int y) {
       click = layer->HuntInnerBox(click);
       if (click->fully_set)
         MainInfoManager::ThrowEvent(click, handy::Priority::NORMAL);
+    }
+  }
+}
+
+std::list<Layer *> LayerManager::GetLayer(int z)
+{
+  return z_to_layers_[z];
+}
+
+LayerManager::~LayerManager()
+{
+  for (auto collec : z_to_layers_)
+  {
+    for (auto trash : collec.second)
+    {
+      delete(trash);
     }
   }
 }

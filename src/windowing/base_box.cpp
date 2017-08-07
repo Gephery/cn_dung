@@ -1,4 +1,5 @@
 #include "base_box.h"
+
 #include "winda.h"
 
 BaseBox::BaseBox(SDL_Point* upper_left)
@@ -100,9 +101,9 @@ void BaseBox::SetClip(SDL_Rect* clip)
   clip_ = clip;
 }
 
-void BaseBox::UnsafelySetY(int new_z)
+void BaseBox::UnsafelySetY(int new_y)
 {
-  clip_->y = new_z;
+  clip_->y = new_y;
 }
 
 int BaseBox::GetY()
@@ -135,5 +136,35 @@ int BaseBox::GetWidth()
 {
 
   return clip_->w;
+}
+
+void BaseBox::SetRecHeight(int height)
+{
+  rect_->h = height;
+}
+
+void BaseBox::SetRecWidth(int width)
+{
+  rect_->w = width;
+}
+
+void BaseBox::SetRecX(int x)
+{
+  rect_->x = x;
+}
+
+void BaseBox::SetRecY(int y)
+{
+  rect_->y = y;
+}
+
+void BaseBox::SetClipWidth(int width)
+{
+  clip_->w = width;
+}
+
+void BaseBox::SetClipHeight(int height)
+{
+  clip_->h = height;
 }
 

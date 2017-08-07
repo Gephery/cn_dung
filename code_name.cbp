@@ -94,13 +94,28 @@
 		<Unit filename="/Users/gephery/github/code-name/src/events/built_in_handlers/default_handlers.h">
 			<Option target="code_name"/>
 		</Unit>
+		<Unit filename="/Users/gephery/github/code-name/src/events/built_in_handlers/player_move_handler.cpp">
+			<Option target="code_name"/>
+		</Unit>
+		<Unit filename="/Users/gephery/github/code-name/src/events/built_in_handlers/player_move_handler.h">
+			<Option target="code_name"/>
+		</Unit>
 		<Unit filename="/Users/gephery/github/code-name/src/events/built_in_packets/click_packet.cpp">
 			<Option target="code_name"/>
 		</Unit>
 		<Unit filename="/Users/gephery/github/code-name/src/events/built_in_packets/click_packet.h">
 			<Option target="code_name"/>
 		</Unit>
-		<Unit filename="/Users/gephery/github/code-name/src/events/handy.h">
+		<Unit filename="/Users/gephery/github/code-name/src/events/built_in_packets/keyboard_packet.cpp">
+			<Option target="code_name"/>
+		</Unit>
+		<Unit filename="/Users/gephery/github/code-name/src/events/built_in_packets/keyboard_packet.h">
+			<Option target="code_name"/>
+		</Unit>
+		<Unit filename="/Users/gephery/github/code-name/src/events/built_in_packets/move_mob_packet.cpp">
+			<Option target="code_name"/>
+		</Unit>
+		<Unit filename="/Users/gephery/github/code-name/src/events/built_in_packets/move_mob_packet.h">
 			<Option target="code_name"/>
 		</Unit>
 		<Unit filename="/Users/gephery/github/code-name/src/events/handy_handler.cpp">
@@ -121,7 +136,10 @@
 		<Unit filename="/Users/gephery/github/code-name/src/events/main_info_manager.h">
 			<Option target="code_name"/>
 		</Unit>
-		<Unit filename="/Users/gephery/github/code-name/src/flat_buffers/main.cpp">
+		<Unit filename="/Users/gephery/github/code-name/src/events/repeat_event.cpp">
+			<Option target="code_name"/>
+		</Unit>
+		<Unit filename="/Users/gephery/github/code-name/src/events/repeat_event.h">
 			<Option target="code_name"/>
 		</Unit>
 		<Unit filename="/Users/gephery/github/code-name/src/items/item.cpp">
@@ -136,10 +154,22 @@
 		<Unit filename="/Users/gephery/github/code-name/src/mob/mob.h">
 			<Option target="code_name"/>
 		</Unit>
-		<Unit filename="/Users/gephery/github/code-name/src/mob/mob_manager.cpp">
+		<Unit filename="/Users/gephery/github/code-name/src/mob/mouse.cpp">
 			<Option target="code_name"/>
 		</Unit>
-		<Unit filename="/Users/gephery/github/code-name/src/mob/mob_manager.h">
+		<Unit filename="/Users/gephery/github/code-name/src/mob/mouse.h">
+			<Option target="code_name"/>
+		</Unit>
+		<Unit filename="/Users/gephery/github/code-name/src/mob/point_of_contact.cpp">
+			<Option target="code_name"/>
+		</Unit>
+		<Unit filename="/Users/gephery/github/code-name/src/mob/point_of_contact.h">
+			<Option target="code_name"/>
+		</Unit>
+		<Unit filename="/Users/gephery/github/code-name/src/util/reallocation_list.cpp">
+			<Option target="code_name"/>
+		</Unit>
+		<Unit filename="/Users/gephery/github/code-name/src/util/reallocation_list.h">
 			<Option target="code_name"/>
 		</Unit>
 		<Unit filename="/Users/gephery/github/code-name/src/windowing/base_box.cpp">
@@ -175,12 +205,6 @@
 		<Unit filename="/Users/gephery/github/code-name/src/windowing/box_types/sprite_area.h">
 			<Option target="code_name"/>
 		</Unit>
-		<Unit filename="/Users/gephery/github/code-name/src/windowing/boxxer.cpp">
-			<Option target="code_name"/>
-		</Unit>
-		<Unit filename="/Users/gephery/github/code-name/src/windowing/boxxer.h">
-			<Option target="code_name"/>
-		</Unit>
 		<Unit filename="/Users/gephery/github/code-name/src/windowing/enums_fonter.h">
 			<Option target="code_name"/>
 		</Unit>
@@ -188,6 +212,12 @@
 			<Option target="code_name"/>
 		</Unit>
 		<Unit filename="/Users/gephery/github/code-name/src/windowing/fonter.h">
+			<Option target="code_name"/>
+		</Unit>
+		<Unit filename="/Users/gephery/github/code-name/src/windowing/layer_manager.cpp">
+			<Option target="code_name"/>
+		</Unit>
+		<Unit filename="/Users/gephery/github/code-name/src/windowing/layer_manager.h">
 			<Option target="code_name"/>
 		</Unit>
 		<Unit filename="/Users/gephery/github/code-name/src/windowing/texture_manager.cpp">
@@ -200,6 +230,18 @@
 			<Option target="code_name"/>
 		</Unit>
 		<Unit filename="/Users/gephery/github/code-name/src/windowing/winda.h">
+			<Option target="code_name"/>
+		</Unit>
+		<Unit filename="/Users/gephery/github/code-name/src/world/world_manager.cpp">
+			<Option target="code_name"/>
+		</Unit>
+		<Unit filename="/Users/gephery/github/code-name/src/world/world_manager.h">
+			<Option target="code_name"/>
+		</Unit>
+		<Unit filename="/Users/gephery/github/code-name/src/world/world_object.cpp">
+			<Option target="code_name"/>
+		</Unit>
+		<Unit filename="/Users/gephery/github/code-name/src/world/world_object.h">
 			<Option target="code_name"/>
 		</Unit>
 		<Unit filename="/Users/gephery/github/code-name/CMakeLists.txt">

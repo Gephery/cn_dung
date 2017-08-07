@@ -9,10 +9,10 @@
 #include <list>
 #include <SDL2/SDL_rect.h>
 #include "../enums_fonter.h"
+#include "../base_box.h"
 
 class SDL_Point;
 class SDL_Color;
-class BaseBox;
 
 class Button : public BaseBox
 {

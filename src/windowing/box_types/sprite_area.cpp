@@ -3,6 +3,7 @@
 //
 
 #include "sprite_area.h"
+
 #include "../texture_manager.h"
 
 BoxOfSprite::BoxOfSprite(std::string path, SDL_Point* upper_left) : BaseBox(upper_left)
