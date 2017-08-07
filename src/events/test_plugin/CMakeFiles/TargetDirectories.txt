@@ -1,0 +1,3 @@
+/Users/gephery/github/code-name/src/events/test_plugin/CMakeFiles/rebuild_cache.dir
+/Users/gephery/github/code-name/src/events/test_plugin/CMakeFiles/edit_cache.dir
+/Users/gephery/github/code-name/src/events/test_plugin/CMakeFiles/test_plugin.dir

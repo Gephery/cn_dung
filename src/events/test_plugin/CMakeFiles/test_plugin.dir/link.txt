@@ -1,0 +1,1 @@
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   -Wl,-search_paths_first -Wl,-headerpad_max_install_names  CMakeFiles/test_plugin.dir/Users/gephery/github/code-name/src/events/info_manager.cpp.o CMakeFiles/test_plugin.dir/Users/gephery/github/code-name/src/events/event.cpp.o CMakeFiles/test_plugin.dir/main.cpp.o  -o build/test_plugin 
