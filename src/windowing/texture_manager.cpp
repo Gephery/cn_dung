@@ -2,8 +2,9 @@
 // Created by Max Grucella on 6/25/17.
 //
 
-#include <SDL2_image/SDL_image.h>
 #include "texture_manager.h"
+
+#include <SDL2_image/SDL_image.h>
 #include "winda.h"
 
 std::map<std::string, SDL_Texture*> TextureManager::assets_;

@@ -3,8 +3,10 @@
 //
 
 #include "layer.h"
+
 #include <iostream>
 #include "../winda.h"
+#include "../../events/built_in_packets/click_packet.h"
 
 Layer::Layer(SDL_Rect *rect, SDL_Point* center, int z) : BaseBox(center)
 {
@@ -23,7 +25,7 @@ std::map<int, std::list<BaseBox*>> Layer::GetInnerBoxes()
 
 void Layer::AddWindaBox(BaseBox* box)
 {
-  inner_boxes_[box->GetY()].push_back(box);
+  inner_boxes_[box->GetY() + box->GetHeight()].push_back(box);
 }
 
 Layer::~Layer()
@@ -93,7 +95,7 @@ int Layer::GetZ()
 
 void Layer::ChangeOfY(BaseBox* box, int new_y)
 {
-  auto yer = inner_boxes_[box->GetY()];
+  auto yer = inner_boxes_[box->GetY() + box->GetHeight()];
   std::remove(yer.begin(), yer.end(), box);
   box->UnsafelySetY(new_y);
   AddWindaBox(box);

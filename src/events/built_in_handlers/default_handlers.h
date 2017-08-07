@@ -8,13 +8,11 @@
 
 #include "../handy_handler.h"
 
-class InfoPacket;
-
 class ClickHandlerTest : public HandyHandler
 {
   public:
     ClickHandlerTest();
-    bool main(InfoPacket *info);
+    virtual bool main(InfoPacket* info);
   private:
 };
 

@@ -1,10 +1,10 @@
 
-#include <SDL2/SDL.h>
+#include "winda.h"
+
 #include <SDL2_image/SDL_image.h>
 #include "fonter.h"
 #include "texture_manager.h"
 #include "base_box.h"
-#include "winda.h"
 
 const char WINDA_NAME[10] = "Game Dung";
 
@@ -13,10 +13,15 @@ SDL_Renderer *Winda::renderer_;
 int *Winda::screen_width_;
 int *Winda::screen_height_;
 BaseBox *Winda::selected_;
+Mouse* Winda::player_;
 
-SDL_Window *Winda::GetWindow() { return main_window_; }
+SDL_Window *Winda::GetWindow()
+{
+  return main_window_;
+}
 
-bool Winda::Init() {
+bool Winda::Init()
+{
   bool success = SDL_Init(SDL_INIT_EVERYTHING) == 0;
 
   if (success) {
@@ -58,8 +63,10 @@ bool Winda::Init() {
   return success;
 }
 
-void Winda::Quit() {
-
+void Winda::Quit()
+{
+  delete(screen_height_);
+  delete(screen_width_);
   TextureManager::Quit();
 
   // SDL main stuff closing
@@ -71,18 +78,32 @@ void Winda::Quit() {
   SDL_Quit();
 }
 
-int Winda::GetWindaWidth() {
+int Winda::GetWindaWidth()
+{
   return *screen_width_;
 }
 
-int Winda::GetWindaHeight() {
+int Winda::GetWindaHeight()
+{
   return *screen_height_;
 }
 
-BaseBox *Winda::GetSelectedBox() {
+BaseBox *Winda::GetSelectedBox()
+{
   return selected_;
 }
 
-void Winda::SetSelectedBox(BaseBox *box) {
+void Winda::SetSelectedBox(BaseBox *box)
+{
   selected_ = box;
+}
+
+Mouse *Winda::GetPlayer()
+{
+  return player_;
+}
+
+void Winda::SetPlayer(Mouse *player)
+{
+  player_ = player;
 }

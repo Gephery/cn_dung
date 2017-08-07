@@ -1,0 +1,30 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/gephery/github/code-name/src/events/event.cpp
+string
+-
+event.h
+/Users/gephery/github/code-name/src/events/event.h
+
+/Users/gephery/github/code-name/src/events/event.h
+functional
+-
+list
+-
+map
+-
+
+/Users/gephery/github/code-name/src/events/info_manager.cpp
+event.h
+/Users/gephery/github/code-name/src/events/event.h
+
+/Users/gephery/github/code-name/src/events/test_plugin/main.cpp
+../event.h
+/Users/gephery/github/code-name/src/events/event.h
+
